@@ -1,0 +1,226 @@
+---
+title: |
+    | Causal Inference: Two approaches
+    | POLS 3312: Argument, Data, and Politics
+date: today
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+---
+
+## Announcements
+
+- Syllabus quiz will be posted soon and you will have at least one week to complete
+- Reading for next Wednesday will be posted this evening or tomorrow
+- Next week we will divide up the reading discussion leader/presentation assignments for later in the semester
+- Slides always posted in Canvas, please don't take photos during class
+
+
+## Cause and effect
+
+- What is a cause?
+- Causes are complicated!
+- The Fundamental Problem
+- Hypothesis Testing: Statistics and Research Design
+- So what does a hypothesis test tell us?
+
+
+
+#  What is a cause?
+
+## What is a cause?
+
+- Writing: what do you think? 
+
+(You can add the "correct" answer later. Points are for your thoughts.)
+
+## What is a cause?
+
+- the thing that Y would not happen without
+
+## What is a cause?
+
+- the thing that Y would not happen without
+- If X does not exist, Y will not happen
+
+## What is a cause?
+
+- the thing that Y would not happen without
+- If X does not exist, Y will not happen
+
+Except...
+
+
+
+## Causes are complicated!
+
+## Causes are complicated!
+
+- Multiple causes
+
+## Causes are complicated!
+
+- Multiple causes
+- Causes may be necessary but not sufficient (conditional)
+
+## Causes are complicated!
+
+- Multiple causes
+- Causes may be necessary but not sufficient (conditional)
+- Causes may be sufficient but not necessary (more than one possible sufficient cause)
+ 
+
+## Causes are complicated!
+
+- Multiple causes
+- Causes may be necessary but not sufficient (conditional)
+- Causes may be sufficient but not necessary (more than one possible cause)
+- Some causes may be neither
+
+
+## Causes are complicated!
+
+- Multiple causes
+- Causes may be necessary but not sufficient (conditional)
+- Causes may be sufficient but not necessary (more than one possible cause)
+- Some causes may be neither
+- The randomness factor (stochastic factor)    
+        
+## Causes are complicated!
+
+- Multiple causes
+- Causes may be necessary but not sufficient (conditional)
+- Causes may be sufficient but not necessary (more than one possible cause)
+- Some causes may be neither
+- The randomness factor (stochastic factor)   
+- Intermediate steps (mediating or moderating variables)
+        
+## Causes are complicated!
+
+- Multiple causes
+- Causes may be necessary but not sufficient (conditional)
+- Causes may be sufficient but not necessary (more than one possible cause)
+- Some causes may be neither
+- The randomness factor (stochastic factor)          
+- Intermediate steps (mediating or moderating variables)
+- Reverse causation (endogeneity)
+
+## Causes are complicated!
+
+These are easy compared to the big issue...
+        
+
+# The Fundamental Problem of Causal Inferance
+
+
+## The Fundamental Problem
+
+- We can't observe "what if"?
+        
+## The Fundamental Problem
+
+- We can't observe the "what if"?
+- Technical term: **counterfactual**
+        
+## The Fundamental Problem
+
+- We can't observe the "what if"?
+- Technical term: **counterfactual**
+- We don't know if Y would have happened without X because X did happen
+
+
+## The Fundamental Problem
+
+- We can't observe the "what if"?
+- Technical term: **counterfactual**
+- We don't know if Y would have happened without X because X happened
+- Huge problem for observational studies
+        
+        
+## The Fundamental Problem
+
+- We can't observe the "what if"?
+- Technical term: **counterfactual**
+- We don't know if Y would have happened without X because X happened
+- Huge problem for observational studies
+- Experimental design *manipulates* the data generation: partial solution
+
+        
+## The Fundamental Problem
+
+- We can't observe the "what if"?
+- Technical term: **counterfactual**
+- We don't know if Y would have happened without X because X happened
+- Huge problem for observational studies
+- Experimental design *manipulates* the data generation: partial solution
+- Observational studies rely on our treatment of the data: partial solution
+
+## Approach 1: Statistics and hypothesis testing
+        
+This will be the topic for the first, smaller part of the course
+        
+## Approach 1: Statistics and hypothesis testing
+
+- Statistical approach to hypothesis testing is part of the solution to the fundamental problem
+- Attempts to control for the randomness factor specifically
+- Our interpretation of statistical hypothesis testing is driven by the fundamental problem - confirmed approximately, not proven
+
+## Hypothesis Testing
+
+- Null hypothesis: effect on Y is due to random chance
+
+## Hypothesis Testing
+
+- Null hypothesis: effect on Y is only due to random chance
+- Null hypothesis: *as if* X didn't exist
+
+
+## Hypothesis Testing
+
+- Null hypothesis: effect on Y is only due to random chance
+- Null hypothesis: *as if* X didn't exist
+- design the statistical model so that: null hypothesis ~ the counterfactual
+
+## Approach 2: Research Design
+
+- Experimental design is the gold standard
+- Observational studies are the norm in many areas of political science
+- Some solutions:
+
+        - Natural experiments
+        - Quasi-experiments
+        - Survey experiments
+        - Control variables, comparative studies
+        - Mixed methods: qualitative and quantitative
+
+## Authorship, License, Credits
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
+
+Z-Table image from: https://byjus.com/maths/z-score-table/
+
+Full Z-Table from unknown course I took sometime in the last 8 years
+
+Other images referenced in previous lectures
+
+
+
+## Hypothesis Testing
+
+- Null hypothesis: effect on Y is only due to random chance
+- Null hypothesis: *as if* X didn't exist
+- design the model so that: null hypothesis ~ the counterfactual
+
+That's aspirational
+
