@@ -1,0 +1,564 @@
+---
+title: |
+    | Descriptive Statistics: Central Tendency and Dispersion
+    | POLS 3312: Argument, Data, and Politics
+date: January 29, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+---
+
+## This Week's Agenda
+
+1. Basic statistics that describe the data
+2. Describing one variable at a time
+3. Central tendency: averages, describing the *typical* result
+4. Dispersion: describing the *variation* and *range* of results 
+5. Reading Academic Articles
+        
+```{r include=FALSE}
+library(tidyverse)
+```
+
+## Descriptive Statistics
+
+## Why do we use descriptive statistics?
+
+- Explore the data
+- See patterns in the data
+- Communicate about the data
+
+## What are the most basic things we need to know?
+
+- What is the scope of the data (time, geography, cases)?
+- What are the variables?
+- What is the unit of observation?
+
+##
+
+**Example**
+
+"This data set provides information on the fate of passengers on the fatal maiden voyage of the ocean liner ‘Titanic’, summarized according to economic status (class), sex, age and survival."
+
+```{r}
+
+titanic_data <- as.data.frame(Titanic)
+
+head(titanic_data)
+
+```
+This data is formatted the way we typically like to use data:
+
+- units of observation: rows
+- variables: columns
+
+##
+
+**BEWARE! Not all data is formatted this way!** Sometimes you have to think "is this a variable or a unit of observation?"
+
+For example data is often presented with variables as rows and units of observation as columns. That's the easy case.
+
+Sometimes, we get data in a mixed format called *wide format*. For example, the following data on Scandinavian temperatures:
+
+```{r}
+# From https://sejdemyr.github.io/r-tutorials/basics/wide-and-long/
+# created by SIMON EJDEMYR
+
+# Create long dataset
+country_long <- data.frame(
+    expand.grid(country = c("Sweden", "Denmark", "Norway"), year = 1994:1996),
+    avgtemp = round(runif(9, 3, 12), 0)
+    )
+
+# Create wide dataset
+country_wide <- data.frame(
+    country = c("Sweden", "Denmark", "Norway"),
+    avgtemp.1994 = country_long$avgtemp[1:3],
+    avgtemp.1995 = country_long$avgtemp[4:6],
+    avgtemp.1996 = country_long$avgtemp[7:9])
+country_wide 
+
+```
+
+It looks like the unit of observation is country and the variable is a combination of year and temperature. 
+
+##
+
+If we look at it in the long format we are used to, it's a little clearer:
+
+```{r}
+
+country_long
+
+```
+
+
+The variable is average temperature. 
+
+The unit of observation is actually not country - it's country-year. Sweden-1994 is one observation, Sweden-1995 is a different observation, and Sweden-1996 is a different observation all with different temperature values. 
+
+
+## Measures of Central Tendency
+
+Measures of central tendency help us:
+
+- reveal patterns
+- find the typical measurement
+- find the center
+
+## Measures of Central Tendence
+
+**A few numbers that can summarize the center of measurement**
+
+- Mean
+
+- Median
+
+- Mode
+
+## Mean
+
+- Symbol: $\bar{x}$
+- Not the middle value
+- Not the most common
+- The center of mass - the sum above equals the sum below
+- Formula is $\bar{x} = \frac{\sum X_i}{n}$
+- Read that: The mean of X equals the sum of the observations (i) of X divided by the number (n) of observations. 
+
+## Example A:
+
+A. What is the mean of 1,5,7,9,10,12,18
+
+## Example A:
+
+A. What is the mean of 1,5,7,9,10,12,18
+
+
+```{r}
+
+A <- c(1,5,7,9,10,12,18)
+
+answer_a1 <- (sum(A)/7)
+
+answer_a2 <- mean(A)
+
+answer_a1
+answer_a2
+
+```
+
+## Example B
+
+B. What is the mean of 10,20,25,30,35,40,45,50,55
+
+## Example B
+
+B. What is the mean of 10,20,25,30,35,40,45,50,55
+
+
+```{r}
+B <- c(10,20,30,35,40,45,50,55,25)
+
+mean_b1 <- (sum(B)/9)
+
+mean_b2 <- mean(B)
+
+mean_b1
+mean_b2
+```
+
+## Median
+
+ - Midpoint
+ - Half observations are greater, half are lower
+ - Just count
+ - Even observations - midpoint between middle two
+ 
+## Example A
+ 
+ A - 1,5,7,9,10,12,18
+ 
+## Example A
+ 
+ A - 1,5,7,9,10,12,18
+
+```{r}
+median(A)
+
+```
+
+## Example B
+
+ B - 10,20,25,30,35,40,45,50,55
+ 
+ 
+## Example B
+
+ B - 10,20,25,30,35,40,45,50,55
+ 
+```{r}
+median(B)
+```
+## Keep in mind for later
+In both of our examples, the mean and median were close but not the same. That isn't always the case. 
+
+## Mode
+
+- Most common value
+- Just count
+
+## Examples:
+
+C. 1,2,3,4,4,5,6,7
+
+Answer: 
+
+D. 10,20,30,30,40,40,40,50,50,60,70
+
+Answer:
+
+
+
+## Advantages and disadvantages
+
+- Median isn't affected by outliers
+
+- Mean gives the broader picture because it includes the outliers.
+
+- Mode is the only option for categorical variables. 
+
+- *We will discuss types of variables more in an upcoming class.*
+
+
+
+## Skewed distribution - when mean and median are different
+
+**The three numbers are often different for the same sample or population.**
+
+Example:
+
+![Negatively skewed, Normal, and Positively Skewed distributions](skewed-curves.png)
+
+## Measures of Dispersion (Variation or Spread)
+
+- Sample data from the USArrests dataset from the R statistical programming software
+- State level data
+- 50 observations
+
+```{r echo=FALSE}
+#Create an object named arrests data
+#assign with the left assignment operator
+#built in R dataset USArrests columns 2 and 3 [2:3]
+arrests_data <- USArrests[2:3]
+     
+```
+
+## Look at the data
+
+
+```{r echo=FALSE}
+
+#get the first 6 rows of the data
+head(arrests_data, n = 12L)
+
+```
+## Find the Center (Mean)
+
+- Finding the mean is the first step
+- We need to know the center to find the spread around the center
+- mean is part of the formula for *variance*
+
+
+
+```{r echo=FALSE}
+#get the mean for both variables and store the means in objects
+mean_assault_arrests <- mean(arrests_data$Assault)
+mean_urban_population <- mean(arrests_data$UrbanPop)
+```
+Mean Assault Arrests per 100,000 population:
+
+```{r echo=FALSE}
+#print the means to the screen
+mean_assault_arrests
+```
+Mean Urban Population Percentage:
+
+```{r echo=FALSE}
+mean_urban_population
+```
+
+## Find the Center (Median)
+
+
+- Why? We want to know if the data is skewed
+
+
+```{r echo=FALSE}
+
+#get the medians and store as objects
+median_assault_arrests <- median(arrests_data$Assault)
+median_urban_population <- median(arrests_data$UrbanPop)
+
+#return the values to the screen
+cat('Median Assault Arrests')
+median_assault_arrests
+
+cat('Median Urban Population')
+median_urban_population
+
+```
+
+## Compare the Mean and Median
+
+- If the mean and median are close, the data is not skewed
+
+Mean Assault Arrests:
+
+```{r}
+mean_assault_arrests
+```
+
+Median Assault Arrests:
+
+```{r}
+median_assault_arrests
+
+```
+
+Mean Urban Population:
+
+```{r}
+mean_urban_population
+
+```
+
+Median Urban Population:
+
+```{r}
+median_urban_population
+
+
+```
+
+## Scattered around the mean
+
+- Measures of dispersion typically look at how the data is scattered around the mean. 
+
+- Let's look at that visually. 
+
+- First the mean of *Assault*
+
+- Then the mean of *Urban Population*
+
+## Scattered around the mean: Assault Arrests
+
+
+```{r echo=FALSE}
+
+plot(arrests_data$UrbanPop,arrests_data$Assault)
+abline(h = mean_assault_arrests)
+
+```
+## Scattered around the mean: Urban Population
+
+```{r echo=FALSE}
+
+plot(arrests_data$UrbanPop,arrests_data$Assault, ylim = c(0,350))
+abline(h = mean_assault_arrests)
+
+```
+
+## Creating a measure of dispersion: distance to mean
+
+-  So, we could define a measure of dispersion or variation that is the total length of the colored lines. 
+- Our formula in English would be "the sum of the differences between each observation and the mean"
+
+
+
+## Problem with sum of distances
+
+The problem is that because of the definition of mean, the positive lines will cancel out the negative and the dispersion or variation would always be zero!
+
+## Simple Data Example
+
+Suppose we had a very simple data set with only two observations - 5 and 15. The mean is 10. One is 5 above the mean and one is 5 below the mean.
+
+## Example 
+
+```{r echo=FALSE}
+
+simple_data <- c(5,15)
+
+#The two data points called from simple_data
+point1 <- simple_data[1]
+#outputs the text Point 1
+cat('Point 1')
+point1
+point2 <- simple_data[2]
+
+#Outputs the text Point 2
+cat('Point 2')
+point2
+
+#Outputs the separator (sep = ) line break or enter (\n)
+cat(sep = "\n")
+
+#the mean
+simple_mean <- mean(simple_data)
+
+#Outputs the text The mean
+cat('The mean')
+simple_mean 
+
+```
+
+
+## Distance from mean 
+
+
+```{r}
+
+point1_dist <- simple_data[1] - simple_mean 
+
+cat('Distance 1')
+point1_dist
+
+point2_dist <- simple_data[2] - simple_mean
+
+cat('Distance 2')
+point2_dist
+
+```
+
+
+## Distance from Mean Total 
+
+So, we want our new measure *total_variation* to equal the sum of the distances, which would be *10*. But when we add 5 plus -5 we get:
+
+```{r echo=FALSE}
+total_variation <- point1_dist + point2_dist #math problem on two objects to create third object
+
+cat('The variation is:')
+total_variation
+```
+
+## Math comes to the rescue! 
+
+- What is something we can do that turns a negative number into a positive number every time and leaves a positive number as a positive? 
+- It's also important that any effect it has on the actual size of the numbers is consistent between positive and negative numbers. 
+
+- We can square the distances
+
+```{r echo=FALSE}
+
+squared_1 <- point1_dist^2 #create new object by squaring the distance for point 1
+squared_1
+
+squared_2 <- point2_dist^2 #create new object squared point 2
+squared_2
+
+```
+
+## Results
+
+ - Squaring 5 turned it into 25 
+ - Squaring -5, which is the same size but negative, also turned it into 25. 
+ - So, now we can add them to get a measure of *total_squared_variation*.
+
+```{r}
+
+total_squared_variation <- squared_1 + squared_2 #math operation
+
+cat('Total squared variation is:')
+total_squared_variation
+
+```
+## Are we done?
+
+- Suppose we had 1000 observations
+- Mean still 10
+- Each still 5 points away on average
+- What would our total variation be?
+
+Given that the actual average distances is exactly the same for both groups, does that make sense? Is it useful?
+
+## Solution: Average Squared Difference - Variance
+
+- We want the *average the squared differences* 
+
+- So our measure of **variance** is in the simplest form:
+
+```{r echo=FALSE}
+simple_variance <- (squared_1 + squared_2)/2 #math operation
+
+cat('The variance:')
+simple_variance
+
+#This is the population variance
+#R actually computes the sample variance
+#To convert the two we can multiply times (n-1)/n
+#In this case, n = 2
+```
+This is actually the *population variance* for this simple data example. 
+
+
+
+
+
+## Squares inflate the results
+
+
+- Squares inflate the numbers relative to the size of the mean. 
+- 25 is 2.5 times the mean. 
+- But the distances aren't really that big
+- Average distance is still 5
+
+## Solution: Square root of the variance
+
+- To partially account for this we can take the square root of the variance 
+- This gets us back to our original units of measurement
+- That gives us our next measure of dispersion and arguably the most important: **standard deviation**            
+
+## Standard deviation
+
+- *standard deviation* is the square root of the variance
+
+```{r echo=FALSE}
+
+simple_standard_deviation <- sqrt(simple_variance) #take the square root
+
+cat('Standard deviation is:') #print to screen
+simple_standard_deviation #print to screen
+
+
+```
+
+
+## Authorship, License, Credits
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        

@@ -1,0 +1,286 @@
+---
+title: |
+    | Probabilities and Frequency Distributions 
+    | POLS 3312: Argument, Data, and Politics
+date: January 31, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+---
+
+## Announcements
+
+- Grades in Canvas
+- Paper will be posted in Canvas for Monday. You *do not need to read it* in advance. We will go through it Monday as an example of how to read an academic paper. You *DO NEED to have a copy* either electronically or printed with you on Monday.
+
+
+## Overview
+
+- Basic overview of probability
+- Frequency Distributions
+
+## Probability
+
+-   Probability is a measure of the likelihood of an event
+-   Probability is a number between 0 and 1 (or 0 and 100%)
+-   0 means the event is impossible
+-   1 means the event is certain
+-   0.5 means the event is as likely as not
+
+## Finding probability
+
+-   Probability is the ratio of the number of times an event occurs to the total number of trials
+-   For example, if we flip a coin 10 times and get 5 heads, the probability of heads is 5/10 or 0.5
+-   If we flip a coin 100 times and get 50 heads, the probability of heads is 50/100 or 0.5
+
+
+## Why do we use data?
+
+-   Purpose: analyzing data for causal inference (to begin to make statements about cause and effect - inferring causes)
+-   Complex and uncertain data requires that we make...
+
+## Assumptions about the data
+
+-   Because the world is complex, to make sense of unknowns we make assumptions about data
+-   The assumptions are useful approximations even when not preceisely true
+-   We still need to check that the real data does not seriously violate the assumptions
+
+
+## Data Assumptions: Random, Independent, and Identically Distributed
+
+-   Randomness and independence matter as assumptions about data
+-   Specifically, these are assumptions about the *Data Generating Process* or DGP
+-   The Data Generating Process: the way the world produces the data
+
+
+
+## The Data Generating Process
+
+-   The source of the data matters - the DGP matters
+-   Experiment vs observation are one way DGP matters
+-   Previously stated: Data comes from a random world
+-   So the DGP has a random element
+
+
+
+## Independence and Distribution
+
+-   Events in the data are *independent and identically distributed* - the IID assumption
+
+## Independence and Distribution
+
+-   Events in the data are *independent and identically distributed* - the IID assumption
+
+-   Independence is statistical independence - the outcome of one event does not affect our belief about the probability of another event
+
+-   We can draw a random number from a hat, then flip a coin. The hat draw does not affect the probability of the coin toss
+
+## Independence and causation
+
+-   Falsifiability assumption: X does not affect Y
+
+<p style="font-size: x-large">
+
+If X does appear to affect Y, we may *begin* to infer some direct or indirect causal relationship in some direction somewhere possibly through one or more additional variables, but not necessarily that X causes Y. This is commonly shortened to the *not quite accurate* summary "correlation does not imply causation."
+
+</p>
+
+## Independence and Distribution
+
+-   Events in the data are *independent and identically distributed* - the IID assumption
+-   Independence is statistical independence - the outcome of one event does not affect our belief about the probability of another event
+-   Identically distributed: drawn from the same *probability distribution*
+
+So...
+
+## Introduction to distributions
+
+-   The most important is the *normal distribution*
+-   This is because of the *central limit theorem*
+-   We will look at these in the most detail: *normal*, *binomial*, *uniform*, *poisson*
+
+## Distribution examples
+
+-   The following are *histograms*
+-   They represent the *frequency* or simply the number count of observations for each value
+-   For example, if the value 4 shows 500, it means there that 4 came up 500 times in the data
+-   The graphs were produced by generating random numbers based on the particular distribution with an R function
+
+## Uniform distribution
+
+**All outcomes are equally likely**
+
+## Uniform distribution
+
+**All outcomes are equally likely**
+
+```{r echo=FALSE}
+rand.unif <- runif(100000, min = 0, max = 10)
+hist(rand.unif, breaks = 20, freq = TRUE, main = "uniform distribution of 100,000 random draws", xlab = 'x', col = "red")
+```
+
+
+
+## Normal Distribution
+
+-   *symmetrical around its mean with most values near the central peak*
+-   width is a function of the *standard deviation*
+-   Other names: *Gaussian distribution*, *bell curve*
+
+## Normal Distribution
+
+```{r echo=FALSE}
+rand.norm<- rnorm(100000)
+hist(rand.norm, breaks = 200, freq = TRUE, main = "normal distribution, sd = 1, 100,000 random draws", xlab = 'x', col = "red")
+
+```
+
+
+## Binomial Distribution
+
+-   binary
+-   success/failure
+-   yes/no
+-   distribution for a number of Bernoulli trials
+
+## Binomial example
+
+-   n = 1 makes this a Bernoulli distribution
+
+```{r echo=FALSE} 
+
+rand.binom<- rbinom(100000,1,.5)
+hist(rand.binom, breaks = 200, freq = TRUE, main = "binomial distribution, p = .5, 1 trial, 100,000 draws", xlab = 'x', col = "red")
+
+```
+
+## Binomial example
+
+-   trials = 25
+
+```{r echo=FALSE}
+
+rand.binom2 <- rbinom(100000,25,.5)
+hist(rand.binom2, breaks = 200, freq = TRUE, main = "binomial distribution, p = .5, 25 trials, 100,000 draws", xlab = 'x', col = "red")
+
+```
+
+## Preview of the Central Limit Theorem
+
+What happens if we do the same thing above but do it 1,000 times and plot the counts?
+
+## Preview of the Central Limit Theorem
+
+```{r, figures-side, fig.show="hold", out.width="50%", echo=FALSE}
+
+rand.binom3<- rbinom(100000,100,.5)
+hist(rand.binom3, breaks = 200, freq = TRUE, main = "Histogram of binomial distribution, p = .5, 100 trial1, 100,000 draws", xlab = 'x', col = "red")
+
+rand.binom4<- rbinom(100000,1000,.5)
+hist(rand.binom4, breaks = 200, freq = TRUE, main = "Histogram of binomial distribution, p = .5, 1000 trials, 100,000 draws", xlab = 'x', col = "red")
+
+```
+
+
+## The Central Limit Theorem
+
+-   For sufficiently large sample sizes, the distribution *of sample means* approximates a normal distribution
+-   This means with a large enough number of trials, we can apply the normal distribution to know things about measures of central tendency, measures of dispersion, and probabilities
+-   Sample sizes above 30
+-   This is just a preview
+
+## 68-95-99.7 Rule
+
+- One of the rules for normal distributions is:
+
+The 68-95-99.7 rule
+
+- 68% of the data is within 1 *standard deviation* of the mean
+- 95% of the data is within 2 *standard deviations* of the mean
+- 99.7% of the data is within 3 *standard deviations of* the mean
+
+## The Law of Large Numbers
+
+-   The law of large numbers tells us that if we repeat an experiment a large number of time, the *average* of the results will be close to the expected value
+-   This allows us to apply the **actual mean of the sample** to the **expected mean of the population**
+
+## Poisson distribution
+
+-   *Count* of number of events in a fixed time/space
+-   *Known* constant mean rate of occurrence
+-   *Independent* of time since last event
+
+## Poisson distribution
+
+```{r echo=FALSE}
+
+rand.poiss<- rpois(100000,1)
+hist(rand.poiss, breaks = 200, freq = TRUE, main = "poisson distribution, lambda = 1, 100,000 draws", xlab = 'x', col = "red")
+
+```
+
+
+
+## Why we can't use standard OLS regression for other DGP
+
+-   We base the likelihood of something being significant on the proximity to the mean
+-   As things get further from the mean in a normal distribution, they become less likely
+
+## Why we can't use standard OLS regression for other DGP
+
+```{r echo=FALSE}
+
+# Set a seed for reproducibility
+set.seed(123)
+
+# Generate data for a normal distribution
+mean_normal <- 5  # Mean of the normal distribution
+sd_normal <- 1    # Standard deviation of the normal distribution
+normal_data <- rnorm(1000, mean = mean_normal, sd = sd_normal)
+
+# Create a histogram for the normal distribution
+hist(normal_data, probability = TRUE, main = "Normal Distribution",
+     xlab = "Value", ylab = "Density", col = "lightblue")
+
+# Overlay a density plot for the normal distribution
+lines(density(normal_data), col = "red", lwd = 2)
+
+```
+
+## Why we can't use standard OLS regression for other DGP
+
+```{r echo=FALSE}
+
+# Set a seed for reproducibility
+set.seed(123)
+
+# Generate data for a Poisson distribution
+poisson_data <- rpois(1000, lambda = 3)  # Adjust the lambda parameter as needed
+
+# Generate data for a normal distribution with 
+normal_data <- rnorm(100000, mean = 6, sd = 1)
+
+# Create a histogram for the Poisson distribution
+hist(poisson_data, probability = TRUE, main = "Poisson vs. Normal Distribution", 
+     xlab = "Value", ylab = "Density", ylim = c(0, 0.4), col = "lightblue")
+
+# Overlay a density plot for the normal distribution
+lines(density(normal_data), col = "red", lwd = 2)
+legend("topright", legend = c("Poisson", "Normal"), col = c("lightblue", "red"), lty = 1, lwd = 2)
+
+```
+
+## Authorship and License
+
+-   Author: Tom Hanna
+
+-   Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+-   License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.\</\>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
