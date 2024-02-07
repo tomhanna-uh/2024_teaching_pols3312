@@ -1,0 +1,196 @@
+---
+title: |
+    | Lecture 4 - Reading a Scientific Article
+    | Argument, Data, and Politics: POLS 3312
+date: February 5, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+# Hypothesis testing
+
+## What is a hypothesis
+
+A falsifiable statement about what we believe will happen based on the theory we are trying to test.
+
+## Falsifiability
+
+- We start from the assumption that our theory is wrong
+
+## Falsifiable
+
+- We start from the assumption that our theory is wrong
+- We assume there is no relationship
+
+
+
+## Falsifiable
+
+- We start from the assumption that our theory is wrong
+- We assume there is no relationship
+- Our hypothesis is called the 
+
+**alternative hypothesis** or **H1**
+
+## Falsifiable
+
+- We start from the assumption that our theory is wrong
+- Our hypothesis is called the 
+
+**alternative hypothesis** or **H1**
+
+- because it is the alternative to our assumption of no relationship
+
+
+## Falsifiable
+
+- We start from the assumption that our theory is wrong
+- Our hypothesis is called the:
+
+**alternative hypothesis** or **H1**
+
+- because it is the alternative to our assumption of no relationship. This is the:
+
+
+**null hypothesis** or **H0**
+
+
+
+
+
+## Testing the null hypothesis
+
+- Statistical tests show the degree of certainty that we can reject the null hypothesis
+
+## Testing the null hypothesis
+
+- Statistical tests show the degree of certainty that we can reject the null hypothesis
+- They show the likelihood that the alternative hypothesis is due to random chance
+
+## Testing the null hypothesis
+
+- Statistical tests show the degree of certainty that we can reject the null hypothesis
+- They show the probability that the alternative hypothesis is due to random chance
+- When the probability, *p*, is below our pre-determined threshold, we reject the null hypothesis 
+
+
+
+## Testing the null hypothesis
+
+- Statistical tests show the degree of certainty that we can reject the null hypothesis
+- They show the probability that the alternative hypothesis is due to random chance
+- When the probability, *p*, is below our pre-determined threshold, we reject the null hypothesis 
+- **If we reject the null hypothesis, the alternative hypothesis is true, right?**
+
+
+## Testing the null hypothesis
+
+- Statistical tests show the degree of certainty that we can reject the null hypothesis
+- **If we reject the null hypothesis, the alternative hypothesis is true, right?**
+
+
+**NO!!!!**
+
+
+
+## Rejecting the null hypothesis
+
+If we reject the null we infer that the alternative hypothesis is approximately true within the probability we have chosen. 
+
+## How do we get there?
+
+**How do we get from a sample with a correlation to talking about testing a hypothesis for a population?**
+
+## How do we get there?
+
+**How do we get from a sample with a correlation to talking about testing a hypothesis for a population?**
+
+- Tying *sample statistics* to *population parameters* by **Law of Large Numbers**
+
+
+
+## Law of Large Numbers
+
+*Given a sample of independent and identically distributed values, the sample mean converges to the true mean.*
+
+## Law of Large Numbers
+
+- With a large enough sample size
+- the sample mean will be close to the true mean for the population
+
+
+
+## How do we get there?
+
+**How do we get from a sample with a correlation to talking about testing a hypothesis for a population?**
+
+- Tying *sample statistics* to *population parameters* by **Law of Large Numbers**
+- Larger sample size also reduces the *standard error* which is a special case of the standard deviation
+
+## Standard error
+
+- The standard error is the standard deviation of the sampling distribution of a statistic
+- Usually the standard error is the standard deviation of the sample mean
+- Measures how accurately the sample measures the population
+- Is also an element in the formula for the confidence interval and the z-score in hypothesis testing
+
+
+
+## How do we get there?
+
+**How do we get from a sample with a correlation to talking about testing a hypothesis for a population?**
+
+- Tying *sample statistics* to *population parameters* by **Law of Large Numbers**
+- Larger sample size also reduces the *standard error* which is a special case of the standard deviation
+- Tying our data to the probability distributions
+
+
+## Probability distributions
+
+*68-95-99.7 Rule*
+
+
+
+## Probability distributions
+
+*68-95-99.7 Rule*
+
+                - Allows us to estimate probability based on distance from the mean
+
+## Probability distributions
+
+*68-95-99.7 Rule*
+
+                - Allows us to estimate probability based on distance from the mean
+                - Applies to normal distribution
+                
+## Probability distributions
+
+The *68-95-99.7 Rule*
+
+                - Allows us to estimate probability based on distance from the mean
+                - Applies to normal distribution
+                - Basis for the actual decision rules using the *standard error* and the *z-score*
+                
+## The 68-95-99.7 Rule
+
+![68-95-99.7 rule](68-95-997.png)
+
+## Authorship, License, Credits
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
