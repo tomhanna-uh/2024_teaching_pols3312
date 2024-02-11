@@ -1,8 +1,8 @@
 ---
 title: |
-    | Lecture 4 - Reading a Scientific Article
+    | Lecture 5 - Introduction to Hypothesis Testing
     | Argument, Data, and Politics: POLS 3312
-date: February 5, 2024
+date: February 7, 2024
 author: "Tom Hanna"
 format: 
         revealjs:

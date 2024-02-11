@@ -1,0 +1,39 @@
+---
+title: |
+    | Lecture 5 - Hypothesis Tests
+    | Argument, Data, and Politics: POLS 3312
+date: February 7, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+## Hypothesis Tests
+
+- Chi-Square Test
+- Student's t-Test
+- z-score
+
+
+## Chi-Square Test
+
+
+
+
+## Authorship, License, Credits
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
