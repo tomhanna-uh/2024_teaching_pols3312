@@ -18,14 +18,366 @@ editor: source
 
 ## Hypothesis Tests
 
-- Chi-Square Test
+- z-score
 - Student's t-Test
+- Chi-Square Test
+- There are many others
+
+## Hypothesis Tests
+
 - z-score
 
+        - normal distribution
+        - sample size above 30
+        - easiest formula
+        - easy to remember significance levels
+        
+## Hypothesis Tests
 
-## Chi-Square Test
+- z-score
+- Student's t-Test
+
+        - similar to normal distribution
+        - small sample sizes
+        - different formula, a little harder to calculate by hand
+        - significance depends on sample size
+        - have to consult table
+        
+## Hypothesis Tests
+
+- z-score
+- Student's t-Test
+- Chi-Square Test
+
+        - categorical variables
+        - different formula
+        - significance depends on degrees of freedom (d.f.)
+        - d.f. is a function of sample size and number of variables (categories)
+        - have to consult table
+        
+## Hypothesis Tests
+
+- z-score
+- Student's t-Test
+- Chi-Square Test
 
 
+## Why different tests?
+
+Different distributions mean different probabilities
+
+## Why different tests?
+
+![Normal and t-distributions](z_and_t.gif)
+
+ Comparison of normal distribution to t-distribution with sample size 15
+ 
+
+## Why different tests?
+
+![Chi-square distribution](chi_sq.png){width=50%}
+     
+        - Chi-square distribution with different degrees of freedom
+        - Degrees of freedom is a function of sample size and number of variables (categories)
+        
+        
+## Z-score test
+
+## The Z-score
+
+- Based on the standard normal distribution
+- Application of the 69-95-99.7 rule
+
+![68-95-99.7 rule](68-95-997.png)
+
+## The Z-score
+
+- Based on the standard normal distribution
+- Based on the 69-95-99.7 rule
+- Measures how many **standard errors** a value is from the mean
+
+
+
+ 
+## The Z-score
+
+- Based on the standard normal distribution
+- Based on the 69-95-99.7 rule
+- Measures how many **standard errors** a value is from the mean
+- Can be used to test:
+
+        - hypotheses about the mean of a population
+        - hypotheses about the difference between two means (two groups with identical distributions)
+        - hypotheses about the difference between a mean and a value
+        - hypotheses about the difference between two proportions
+
+
+
+
+
+## Standard error: Tying samples to populations
+
+- Quantifies the range around population value (parameter) for the sample value (the statistic)
+- Standard error is the standard deviation of the sample mean
+
+
+## The Standard Error of the Mean
+
+- Standard deviation measures dispersion relative to the mean
+- Standard error measures dispersion between the sample mean and the population mean
+
+
+## The Standard Error of the Mean
+
+<p style="color:red;text-align:center;font-size: 60px;">Sample Size Matters</p>
+
+<p style="color:red;text-align:center;font-size: 100px;">A lot!</p>
+
+## The Standard Error of the Mean
+
+- Standard error of the mean is the sample standard deviation divided by the square root of the sample size:
+  
+<p style="color:red;text-align:center;font-size: 60px;">$\frac{s}{\sqrt{n}}$</p>  
+
+
+
+## The Standard Error of the Mean
+
+- Standard error of the mean is the sample standard deviation divided by the square root of the sample size:
+  
+<p style="color:red;text-align:center;font-size: 60px;">$\frac{s}{\sqrt{n}}$</p>  
+
+
+<p style="color:red;text-align:center;font-size: 60px;">So what happens as sample size increases?</p>
+
+
+## The Standard Error of the Mean
+
+<p style="color:red;text-align:center;font-size: 60px;">As sample size increases, the standard error decreases, holding everything else constant.</p>
+
+## Stanard Error
+
+- Standard Error **is** the standard deviation of the *sample means*.
+    
+        - If we do 1000 trials of random, indendepent, identically distributed variables (random IID variables) from any distribution
+        - The means of each trial are the sample means
+        - Central Limit Theorem tells us that the distribution of the sample means will converge to a normal distribution 
+
+    
+## Stanard Error
+
+```{r, echo=FALSE}
+
+v1 <- rbinom(10000,20, prob = .5)
+hist(v1, main = "Histogram of 10000 trials of 20 coin flips", xlab = "Number of heads", ylab = "Frequency")
+
+
+```
+
+
+## Standard Error
+
+- Theoretically, if we do an experiment with 500 subjects, it's one trial with one sample mean. 
+- Practically, we can't do 10000 trials of 500 subjects each. We can only do one trial with 500 subjects, or
+- We use observational data with 500 observations
+- For sample sizes above 30, we typically use the z-score over the t-test.
+
+## Z-Score: Concept
+
+- Number of standard errors from the mean 
+
+
+## Z-Score: Concept
+
+- Number of standard errors from the mean 
+- Probability that actual population parameter is approximately equal to sample statistic
+
+## Z-Score: Concept 
+
+- Number of standard errors from the mean 
+- Probability that actual population parameter is approximately equal to sample statistic
+
+
+- If we know the sample mean, $\bar{x}$, is 50
+- standard error, $\sigma$, is 1
+- We want to locate the population mean, $\mu$
+
+## Z-Score: Concept
+
+**68-95-99.7 Rule**
+
+- 99.7% probability that the true population mean is between $\bar{x} \pm 3 * SE$ or 50 $\pm$ 3 * SE 
+- If SE is 1..
+
+## Z-Score: Concept
+
+**68-95-99.7 Rule**
+
+- 99.7% probability that the true population mean is between $\bar{x} \pm 3 * SE$ or 50 $\pm$ 3 * SE 
+- If SE is 1..
+- 99.7% probability that the true population mean is between 47 and 53. 
+
+## Confidence Interval: Concept
+
+**68-95-99.7 Rule**
+
+- 99.7% probability that the true population mean is between $\bar{x} \pm 3 * SE$ or 50 $\pm$ 3 * SE 
+
+**Confidence Interval** 
+
+- The 99.7% *Confidence Interval* of the sample mean with a sample mean of 50 and standard error of 1 is 47 to 53. 
+
+
+## Z-Score: Formula
+
+- **The Z-score gives us a formula which we can compare to standard tables of probabilities**
+
+## Z-Score: Formula
+
+- **The Z-score gives us a formula which we can compare to standard tables of probabilities**
+- <p style="color:red;text-align:center;font-size: 120px;">$z = \frac{x - \mu}{\sigma}$</p>  
+ 
+        - x is the raw score, μ is the population mean, and σ is the population standard deviation
+
+
+## Z-Score: Confidence Interval
+
+
+
+- *The Confidence Interval with the Z-Score is sample mean $\pm$ the Margin of Error which we get from (just for illustration at this point)*:
+  
+  ![Margin of Error formula](margin-of-error.jpg)
+
+
+## Student's t-Test
+
+
+
+## Student's t-test: compares the means of two groups 
+
+- Developed by William Sealy Gosset, who published under the pseudonym Student
+- Gosset worked for Guinness and was interested in the quality of barley malt for use in brewing beer
+- He was interested in small sample sizes, so he developed the t-test
+- He also developed the concept of statistical power
+- He was a chemist, not a statistician, so he published under a pseudonym
+
+
+
+## Student's t-test: compares the means of two groups 
+               
+- pairwise comparison: what are the pairs?
+
+        - one sample: comparing one group against a standard value
+        - two-sample or independent t-test: compares two groups from different populations 
+        - paired t-test: compares a single group as in before and after comparison
+
+- One or two tails
+
+        - Two tailed test: tells if they are different, either greater or less
+        - One tailed test: tells if one group is specifically greater or less, bot not either
+        
+Other points:
+
+        - degrees of freedom = n - 1
+        - When t-test degrees of freedom > 30, it converges on the z-score
+        - t-test is more conservative than z-score
+        
+## More conservative than the z-score: distribution of t-scores 
+
+![t vs z dist](z_and_t.gif)
+                
+
+                
+## z-score: continuous, normally distributed variables
+                        
+- Continuous variables 
+- normal distribution
+
+        - Central Limit Theorem can get us to normal distribution
+        
+- known population standard deviation 
+
+        - "known" ~ accepted estimate of the population standard deviation from LLN and CLT
+
+- Use if: if the population standard deviation is known or reliably estimated and sample size > 30
+                
+## Deeper look at t-tests
+ 
+- Paired sample t-test
+- $t = \frac{\bar{x}_{diff}}{\sigma_{diff}/\sqrt{n}}$
+ 
+<br><br> 
+
+- $\bar{x}_{diff}$: sample mean of the differences
+- $\sigma_{diff}$: sample standard deviation of the differences
+- n: sample size (in pairs)
+
+
+
+## Example Data:
+
+
+Group 1: (12.2, 14.6, 13.4, 11.2, 12.7, 10.4, 15.8, 13.9, 9.5, 14.2)
+Group 2: (13.5, 15.2, 13.6, 12.8, 13.7, 11.3, 16.5, 13.4, 8.7, 14.6)
+
+More on reading t-tables plus 1- and 2- tailed tables here:
+
+[https://www.statisticshowto.com/tables/t-distribution-table/](https://www.statisticshowto.com/tables/t-distribution-table/)
+
+
+## What is $X^2$ 
+
+- Frequency distribution
+- Used in hypothesis testing
+- Categorical variables
+- Ideal sample size 50- 1000
+
+                + Less than 10 very unreliable
+                
+- Two hypothesis tests
+
+                - Test of goodness of fit (1 variable)
+                - **Test of independence (2 variables)*
+                
+## $X^2$ Test of independence
+
+- Categorical variables 
+
+        + Testing if categories are related
+        + Men/women, Republicans/Democracts, Northerners/Southerners, Black/White
+        
+- 2nd variable is the thing we look for a difference in
+
+        + Pay, attitudes toward taxes, attitudes toward military service, victimization by police
+        
+
+## $X^2$ Test
+
+-  $X^2$ tests the P($\frac{(Observed - Expected)^2}{Expected}$)
+- The score is $\frac{(Observed - Expected)^2}{Expected}$) 
+- Expected = $\frac{row total x column total}{sample size}$
+- H0 (null hypothesis): in the population, the two categorical variables are independent *not related*
+- H1 (alternative/research hypothesis): in the population, the two categorical variables are dependent *related*
+- p-value is P(random effect > computed effect) *so smaller is better*
+
+## Chi Square Visualization
+
+![Visualization of Chi-Square](Chi-Square-Test-of-Independence-1.jpg)
+
+## Not a normal distribution
+
+![Chi Square Distribution](chi-square-distribution.png)
+
+- the sum of the squares of k independent, zero-mean, unit-variance Gaussian random variables
+
+## Chi-Square Example
+
+- 2x2 table
+
+        - 2 rows, 2 columns
+        - 2 variables
+        - 4 cells
+        
 
 
 ## Authorship, License, Credits
@@ -37,3 +389,7 @@ editor: source
 - License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
 
 <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
+
+Chi-square probability distribution - By Geek3 - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=9884213
+
+t-test probability distribution - https://simon.cs.vt.edu/SoSci/converted/T-Dist/

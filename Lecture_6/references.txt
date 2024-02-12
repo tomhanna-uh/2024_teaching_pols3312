@@ -1,0 +1,4 @@
+Chi-square probability distribution - By Geek3 - Own work, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=9884213
+
+t-test probability distribution - https://simon.cs.vt.edu/SoSci/converted/T-Dist/
+
