@@ -1,0 +1,208 @@
+---
+title: |
+    | Lecture 7 - Scientific Questions
+    | Argument, Data, and Politics: POLS 3312
+date: February 21, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+## Today's Agenda
+
+- Answers to questions from last class about measurement
+- A review of what constitutes a scientific question
+
+
+## Questions from Last Class
+
+- Self-report surveys
+- Human rights violations measurement
+- General comments on measurement
+
+## Self-report surveys
+
+- The authors use the V-Dem project survey to measure democracy. 
+- They provide the text from a survey question but don't explain the survey methodology
+- This led to an excellent question, because it could easily be interpreted as a self-report survey
+- It is actually an "expert survey" of academics with research expertise in the subject matter, country, region, or a combination. 
+- The methodology is extremely robust and the survey is widely used. 
+
+## V-Dem Polyarchy Measure
+
+ > We use the “polyarchy” measure which is a continuous variable ranging from 0 to 1. It measures the extent to which electoral competition is free and fair, civil society organizations operate freely, freedom of expression is respected, and media is allowed to operate independent from government interference.^[Zarpli, O., & Zengin, H. (2022). Shame, endorse, or remain silent?: State response to human rights violations in other countries. Research & Politics, 9(1). https://doi.org/10.1177/20531680211070344]
+
+
+## Human Rights Violation Measurement
+
+- Human rights in this context measures something very specific
+
+        - Violation of physical integrity rights
+        - By state actors
+
+## Human Rights Violation Measurement
+
+- It may not catch other equally bad things that we colloquially refer to as human rights.
+- It may not catch everything that political theorists, activists, or other experts refer to as human rights that are equally bad but different things.
+
+For example, it would not include the hate crime murder of Matthew Shepard by non-state actors (private citizens):
+
+> On October 7, 1998, Matthew Shepard, a 21-year-old student at the University of Wyoming, was brutally attacked and tied to a fence in a field outside of Laramie, Wyoming and left to die. On October 12, Matt succumbed to his wounds in a hospital in Fort Collins, Colorado.^[https://www.matthewshepard.org/about-us/our-story/]
+
+
+## Human Rights 
+        
+- The specific method used by the authors was taken from previous work and reported in an article cited in this article.
+- It was a compilation of two types of human rights reporting.
+
+        - standards based reports from Amnesty International and the United States State Department
+        - events based reporting from multiple sources
+        
+## Standards based reporting
+
+- Standards based reporting will vary with the specific standards set by the reporting entity or agency
+
+        - "Amnesty International holds that the death penalty breaches human rights, in particular the right to life and the right to live free from torture or cruel, inhuman or degrading treatment or punishment." 
+^[https://www.amnesty.org/en/what-we-do/death-penalty/#:~:text=Amnesty%20International%20holds%20that%20the,or%20degrading%20treatment%20or%20punishment.]
+
+        - United States Department of State LIKELY does not report use of the death penalty, a legal punishment at state and federal level in the United States, as a human rights violation. (I have not been able to confirm this.)      
+        
+
+
+## Events based reporting
+
+- Most events based reporting only reports "extra-judicial killings" as violations, so would not report application of a judicially imposed death penalty. 
+- Events based reporting likely **would** have reported among entirely too many other killings, the murders of:
+
+        - Philando Castile
+        - Breonna Taylor
+        - George Floyd
+        - Rhogena Nicholas and Dennis Tuttle
+        
+        
+## Scope of the data
+
+"What is the scope? (Time, geography, population of interest, etc.)"
+
+## Scope of the data
+
+- Data sets are limited in scope including time
+- Data sets may be a single observation at a point in time or a "time series"
+- Time series data sets measure each variable on a yearly (or other) basis
+- If a data set's unit of observation is the country-year, each country and year combination is a discrete, independent measurement
+- Variable measurements outside the scope of the data are, definitionally, not measured by the data set
+
+## General Comments on Measurement
+
+- Measurement must be precise and consistent
+- It is more accurate to add two narrow measures together than to parse too broad a measure
+- One solution to this is for a large research organization to measure multiple things and then create a combined index
+- However, even the largest research organization can not measure everything, and...
+
+
+## General Comments on Measurement
+
+
+- For the typical academic researcher, it is often only feasible to measure a very specific thing relevant to the research.
+- The researcher interested in state sanctioned violation of physical integrity rights is not granting moral approval to other forms of murder, any more than the researcher interested in civil wars grants moral approval to interstate war or vice versa.
+
+
+# Scientific Research Questions
+
+## What is science? Based on proof
+
+-   *Positive* not *normative*
+
+-   About explaining the world as it is
+
+-   Not based on ideas about what "should be"
+
+-   Based on physical proof that can be empirically tested
+
+
+
+## Applying science to politics
+
+-   political philosophy (theory) ![](socrates.jpg){width="4%"}
+-   American politics ![](science.png){width="4%"}![](socrates.jpg){width="4%"}
+-   comparative politics ![](science.png){width="4%"}
+-   international relations ![](science.png){width="4%"}
+-   political economy ![](science.png){width="4%"}
+-   political psychology ![](science.png){width="4%"}
+-   judicial behavior - not the same as "law" ![](science.png){width="4%"}
+-   policy ![](gear.png){width="4%"} ![](science.png){width="4%"}
+-   ...
+
+
+## Research Questions: The First Step
+
+**Non-scientific questions**
+
+*topic: Dobbs v. Jackson Women's Health Organization (2022)*
+
+        - Did the decision repealing Roe v Wade violate rights? (Political Philosophy - POLS 3310, 3349, 4344)
+        - Was this case properly decided legally? (Law - POLS 3356,3357)
+        - Is there a right to abortion in the Constitution? (Law - POLS 3356,3357)
+        - When does life begin? (Philosopy/Theology - PHIL 1301, PHIL3351)
+        - Should Samuel Alito be impeached?  (American politics/Constitutional Law - POLS 3364,3356)
+        - Should Harry Blackmun be canonized? (Theology - Check with the appopriate church)
+
+## Research Questions: The First Step
+
+**Good scientific questions**
+
+1.  About cause and effect
+
+                 - "Does X cause Y?" 
+                 - "What causes Y?"
+                 -  NOT "What is the recorded measurement of Y?" - important measurement question, but not a science question
+
+2.  Should be measurable
+
+3.  It should be specific at least as to the outcome (Y, dependent variable)
+
+4.  "Why" questions are most interesting: "Why do different countries adopt a different policy with regard to Y?"
+
+## Research Questions: The First Step
+
+**Good scientific question related to Dobbs:**
+
+Does the gender of litigators (lawyers) affect judicial decisions?
+
+<iframe src="https://elizabethalane.com/" width="1000" height="300">
+
+</iframe>
+
+
+## Writing
+
+- Write a research question on the topic of your choice
+
+        - What topic are you interested in?
+        - What is the dependent variable? The "Y"? The outcome?
+        - Do you have an idea about the independent variable? The "X"? The cause?
+
+
+
+
+
+
+
+
+## Authorship, License, Credits
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
