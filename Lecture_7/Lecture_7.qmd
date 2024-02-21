@@ -18,15 +18,16 @@ editor: source
 
 ## Today's Agenda
 
-- Answers to questions from last class about measurement
+- Answers to questions from last class 
 - A review of what constitutes a scientific question
 
 
-## Questions from Last Class
+## Questions from Last Class and related comments
 
 - Self-report surveys
 - Human rights violations measurement
 - General comments on measurement
+- Normative judgments about blame for human rights violations
 
 ## Self-report surveys
 
@@ -113,6 +114,15 @@ For example, it would not include the hate crime murder of Matthew Shepard by no
 
 - For the typical academic researcher, it is often only feasible to measure a very specific thing relevant to the research.
 - The researcher interested in state sanctioned violation of physical integrity rights is not granting moral approval to other forms of murder, any more than the researcher interested in civil wars grants moral approval to interstate war or vice versa.
+
+## Normative comments
+
+- There was a normative comment about blame for human rights violations belonging to colonizers
+- If this was a response to the paper, it was a strawman argument
+- The paper makes no statement about blame for human rights violations
+- The paper makes no statement about blame for anything
+- Blame is a moral, philosophical question. 
+- Immediate cause does not equate to blame, as it does not rule out prior causes or mitigating circumstances.
 
 
 # Scientific Research Questions
