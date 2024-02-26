@@ -1,0 +1,244 @@
+---
+title: |
+    | Lecture 8 - Scientific Questions
+    | Argument, Data, and Politics: POLS 3312
+date: February 26, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+## Today's Agenda
+
+- Demonstration of chi-square test with simple data
+- Discussion of correlation and regression
+
+## Chi-Square Test
+
+Does the preference for cats and dogs vary by gender between men and women?
+
+Data:
+
+Men who prefer cats: 207
+Men who prefer dogs: 282
+Women who prefer cats: 231
+Women who prefer dogs: 242
+
+## Chi-Square Test: Step 1
+
+Specify the hypotheses:
+
+- Null hypothesis: There is no relationship between gender and preference for cats or dogs. Preference is independent of gender.
+
+- Alternative hypothesis: There is a relationship between gender and preference for cats or dogs. Preference is not independent of gender.
+
+## Chi-Square Test: Step 2
+
+Organize the data in a table
+
+
+
+
+## Chi-Square Test: Step 3
+
+Determine the critical value for the chi-square test.
+
+- Find degrees of freedom (df): (rows - 1) * (columns - 1)
+- Choose critical probability (p-value): .05 for social and life sciences generally
+- Find the critical value in the chi-square distribution table
+
+## Chi-Square Test: Step 4
+
+Compute the test score
+
+## Chi-Square Test: Step 5
+
+Make a decision
+
+- Is the test score greater than the critical value? 
+- If so, reject the null hypothesis and accept the alternative hypothesis as approximately true given the data. 
+- If not, fail to reject the null hypothesis.
+
+
+# Correlation and Regression
+
+## Correlation
+
+- Measures the strength and direction of a linear relationship between two variables
+
+- Ranges from -1 to 1
+
+- Positive correlation: As one variable increases, the other variable increases
+
+- Negative correlation: As one variable increases, the other variable decreases
+
+## Correlation example
+
+- Correlation between height and weight
+
+- Correlation between education and income
+
+- Correlation between age and political participation
+
+
+## Regression: Ordinary Least Squares
+
+- Finds a linear equation that predicts the value of one variable based on the value of another variable
+
+## Regression: Ordinary Least Squares
+
+- Finds a linear equation that predicts the value of one variable based on the value of another variable
+
+
+- The equation is in the form:
+
+$y = \alpha + \beta x + \epsilon$
+
+
+## Regression: Ordinary Least Squares
+
+- Finds a linear equation that predicts the value of one variable based on the value of another variable
+- The equation is in the form:
+
+$y = \alpha + \beta x + \epsilon$
+
+- Find the equation that minimizes the errors. 
+
+
+
+
+
+## Regression: Ordinary Least Squares
+
+- Finds a linear equation that predicts the value of one variable based on the value of another variable
+- The equation is in the form:
+
+$y = \alpha + \beta x + \epsilon$
+
+- Find the equation that minimizes the errors. 
+
+        - Specifically, we do this by finding the equation that minimizes the sum of the squared differences between the predicted value and the actual value
+        
+
+
+## Regression: Ordinary Least Squares
+
+Example data:
+
+```{r}
+# Create some data
+
+x <- c(12, 18, 31, 44, 49)
+y <- c(2, 3, 4, 5, 6)
+
+# print a table of the data without row numbers
+
+print(data.frame(x, y))
+```
+
+## Regression: Ordinary Least Squares
+
+Example data: Correlation
+
+```{r}
+# Calculate the correlation
+cor(x, y)
+
+```
+
+Exam questions from this data: 
+
+ - What direction is the correlation between x and y? (positive or negative)
+ - How strong is the correlation between x and y? (weak, moderate, strong) Justify your answer briefly in a sentence or two.
+
+
+## Regression: Ordinary Least Squares
+
+Example:
+
+```{r}
+# Fit a linear model
+model1 <- lm(y ~ x)
+
+#plot model 1
+plot(x, y, main="Scatterplot of x and y", xlab="x", ylab="y", pch=19)
+abline(model1, col="red")
+
+
+
+```
+
+## Regression: Ordinary Least Squares
+
+Example:
+
+```{r}
+library(stargazer) 
+# Print the model
+stargazer(model1, type = "text")
+
+```
+
+## Regression: Ordinary Least Squares
+
+Exam questions from this model: 
+
+- What is the linear equation for this model?
+- Is the coefficient of X significant at the .10 level? .05 level? At the .01 level?
+- What is the standard error of X? The standard error of the Constant?
+- How much of the variation in Y is explained by this model? (R-squared)
+
+## Regression: Ordinary Least Squares
+
+Simple example: possible computation
+
+```{r}
+# Create some data
+x2 <- c(10,20,30,40,50)
+y2 <- c(200,300,400,500,600)
+
+# print the data in a table
+print(data.frame(x2, y2))
+
+# fit the model
+model2 <- lm(y2 ~ x2)
+```
+
+Question: What is the correlation between X and Y? What do you think the R2 will be?
+
+## Regression: Ordinary Least Squares
+
+```{r}
+#print the model
+stargazer(model2, type = "text")
+
+
+```
+
+## Regression: Ordinary Least Squares
+
+Additional example exam question from this model:
+
+If X is 35^[This could be any number. 35 is just an example.], what is the predicted value of Y based on this model?
+
+
+
+
+
+## Authorship, License, Credits
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
