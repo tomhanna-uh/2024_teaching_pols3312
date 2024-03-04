@@ -1,0 +1,255 @@
+---
+title: |
+    | Midterm Review
+    | Argument, Data, and Politics: POLS 3312
+date: March 6, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+# Midterm Review
+
+## Midterm schedule
+
+Wednesday, March 6 in the normal classroom at normal class time
+
+## Format and procedures
+
+- The University [Academic Honesty Policy](https://www.uh.edu/provost/policies-resources/honesty/) applies including student's responsibility to report suspected violations to the instructor
+
+        - "Students shall have the responsibility of reporting incidents of alleged academic dishonesty to the instructor of record involved, or to the appropriate authority if the alleged act is not associated with a specific class."  
+
+## Format and procedures
+
+- The midterm will cover the first half of the course
+- The midterm will be a mix of multiple choice, short answer, and **short** essay questions. About 20% will be relatively simple statistics calculations.
+- What you need/can use: 
+        
+        - You will need pens or pencils
+        - You can bring either all your notecards from class or one 8.5 x 11 handwritten page of notes
+        - No devices except a calculator (likely not needed)
+        
+- Everything else put away, including phones, laptops, tablets
+- You do not need a blue book, paper will be provided
+
+## Format and procedures
+
+
+- No talking, no looking at other people's work, no sharing notes
+- You may be asked to show your notes/notecards before, during, or after the exam 
+- Arrive planning to stay until you are finished
+- You may not leave the room during the exam
+- No one may start the exam after the first person finishes and leaves
+
+
+
+# Midterm Topics
+
+## Important Note
+
+- This review focuses on topics and questions.
+- The answers and longer explanation are from the lectures (and *may* be found in the text).
+- The review is organized in order according to the lectures.
+
+## General
+
+- What is the fundamental problem of causal inference?
+- Causes: causal variables, X variables, independent variables (IV)^[Not testable, but to help you avoid confusion: This is usually the case, especially in this course. In reading journal articles, IV may also be used in studies using "instrumental variable" analysis to indicate the instrumental variable], treatment variables
+- Effects: dependent variables (DV), Y variables, outcome variables
+- Critical p-value is .05 unless otherwise stated
+
+
+## Cause and Effect (Lect 1)
+
+- What is a cause?
+- Causes are complicated: How?
+- Necessary and sufficient causes; conditions
+- Mediating and moderating variables
+- The stochastic or random factor
+- Reverse causation 
+
+## Cause and effect
+
+What is the fundamental problem of causal inference?
+
+## How do we approach the problem of causal inference?
+
+- The gold standard: experimental **design** 
+
+        - random assignment
+        - manipulation (treatment)
+        - control group
+        
+- Observational studies: model oriented **analysis**
+
+- Statistical approach to hypothesis testing
+
+## Basic data and statistics (Lect 2)
+
+- What do we need to know about the data?
+
+- Central tendency: mean, median and mode
+
+        - why do we use them?
+        - what do they tell us?
+        - what are their strengths, weaknesses, and specific uses?
+        - Be prepared to compute a mean, find a median, and find a mode from a set of numbers
+        
+- Dispersion: range, variance, standard deviation
+
+        - why do we use them?
+        - what do they tell us?
+        - In figuring variance, why do we square the differences?
+        - In figuring variance, why do we divide by sample size (either n or n-1)?
+        - One measure of dispersion is the square root of another measure. Which one? Why do we take the square root? Be prepared to find one from the other by squaring or taking the square root
+        
+## Probability and frequency distributions (Lect 3)
+
+- Probability
+
+        - What is probability?
+        - What is the range of probability?
+        - What does probability of 0 mean? What does probability of 1 mean? What does a negative probability mean ("trick" question)?
+        - How do we find probability?
+        
+- Assumptions about data/frequency distributions
+
+        - Why do we need assumptions?
+        - Independent, identically distributed data (iid)
+        - What is independence (statistically)? How does it affect our beliefs about cause and effect?
+        - What is the Data Generating Process? (DGP)
+        
+## Frequency distributions
+
+- Uniform distribution
+
+        - Define a uniform distribution
+        - Recognize a uniform distribution by shape
+        
+- Binomial distribution
+
+        - What is it?
+        
+- Poisson distribution
+
+        - What is it?
+        - What does it tell us about always assuming a normal distribution?
+
+- Normal distribution
+
+        - Define a normal distribution
+        - Recognize a normal distribution by shape
+        - What is the mean, median, and mode of a perfect normal distribution?
+        - why is the normal distribution so important to statistics? (Hint: We do NOT, DO NOT, DO NOT believe that all things are normally distributed.) (Hint 2: ___ ___ theorem and sample size)
+        - What do we know about probabilities and the normal distribution?
+        
+
+## Reading a scientific article (Lect 4)
+
+- What are the top 5 things we are looking for?
+- In looking at the research question, what is the essential element? Where can we usually find the research question?
+- If we want to know the current state of knowledge what area of the paper will help us?
+- What are three essential elements of a good theory section? (Two types of variables and a testable ____)
+
+## Reading a scientific article (Lect 4)
+
+- What questions should you ask about the data? About the research design?
+- What do we expect to find in the results section? The author should explain how the results apply to what?
+- What are important points from the dicussion/conclusion section?
+
+
+## Hypothesis Testing (Lect 5)
+
+- What is a hypothesis?
+- What is falsifiablity?
+- What is a null hypothesis?
+- What is an alternative hypothesis? Why do we call the research hypothesis "alternative"?
+- What do statistical tests show? What hypothesis do they help us to retain or reject?
+
+## Hypothesis Testing (Lect 5)
+
+- If we reject the null hypothesis, what can we say about the alternative hypothesis?
+
+## Hypothesis Testing (Lect 5)
+
+- How do we test hypotheses about a population when we only have a sample?
+
+        - Law of Large Numbers
+        - Central Limit Theorem
+        - Standard error
+        
+## Hypothesis Testing (Lect 6)
+
+- Common to all tests
+
+        - What is a p-value? Significance level? Confidence level?
+        - What is the critical value?
+
+- Scores
+
+        - What score is directly tied to the normal distribution?
+        - What score is similar to the normal distribution, but more conservative with more room in the "tails?" This is the score we use for small sample sizes.
+        - At what sample size does this score become "close enough" to normal to apply the normal distribution?
+        - What hypotheses test is used to test the independence of categorical variables?
+        
+## Hypothesis Testing (Lect 6)
+        
+- Standard error
+
+        - What does the standard error measure?
+        - The standard error relates the sample mean to what?
+        - The standard error is a special case of what important measure of dispersion that ties directly to probabilities in the normal distribution?
+        
+- What is the Z-score in terms of standard errors?
+
+## Lect 7
+
+- What kind of questions does science seek to answer?
+- Is science concerned (directly) with explaining the world as it is or with making arguments about an ideal world?
+- What kind of questions can science not answer (though it may contribute to the answer)?
+- Why is it best to ask scientific questions in as neutral a way as possible?
+- A scientific research question needs at least one thing. What is it?
+
+
+## Correlation and Ordinary Least Squares Regression (Lect 8)
+
+- What is correlation?
+
+        - What does it measure?
+        - What kind of relationship can it measure? What kind can it not measure?
+        - What is the range of numbers?
+        - What does -1 represent? what does 0 represent? What does 1 represent?
+        - Where does correlation fit in assessing cause and effect? Does it prove specific cause and effect? Does it provide useful information about possible cause and effect?
+        - Does a correlation of 0 mean there is no relationship between the variables?
+
+## Correlation and Ordinary Least Squares Regression (Lect 8)
+        
+- Ordinary Least Squares regression
+
+        - Regression is intended to find what kind of equation?
+        - This is an equation that draws what geometric figure?
+        - Regression is intended to find the equation that minimizes what (generally)?
+        - OLS regression does this by minimizing what (specifically)?
+        - What is the difference between correlation and regression?
+        - Does a well fit regression equation prove cause and effect? (Hint: we had an article about this)
+
+
+
+## Authorship, License, Credits
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
