@@ -1,0 +1,77 @@
+---
+title: |
+    | Lectures 9 and 10 - Experiments and Experimental Design
+    | Argument, Data, and Politics - POLS 3312
+date: March 18 and March 20, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3311, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+## Agenda and Recap
+
+- Procedural
+
+        - Review of midterm
+        - Minor procedures update
+        - Questions on procedural issues
+
+- Substantive
+
+        - Recap of scientific method, fundamental problem of causal inference
+        - Introduction to experiments
+        - Experimental design
+        - Lab and Field experiments
+        - Natural experiments, quasi-experiments, etc.
+
+
+## Review of Midterm
+
+- Midterm results
+- Specific issues
+- Why give a hard exam and adjust the score?
+- Questions?
+
+## Why give a hard exam and adjust the score?
+
+
+
+## Why give a hard exam and adjust the score?
+
+- Exam serves at least three functions
+
+        - The exam is a diagnostic tool
+        - The exam is a learning tool
+        - The exam is a credentialing tool 
+        
+- The functions require different things
+
+        - The diagnostic and learning aspects both require a broad variation in outcomes, a wide frequency distribution of raw scores to measure differences and similarities across the class.
+        - The credentialing aspect is why we adjust the scores.
+        
+- Why not use an actual normal distribution?
+
+        - Upper division class
+        - Distribution isn't usually normal
+
+
+## Authorship, License, Credits
+
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- Do not submit to Chegg or similar websites
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
