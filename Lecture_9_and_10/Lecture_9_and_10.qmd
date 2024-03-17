@@ -26,7 +26,8 @@ editor: source
 
 - Substantive
 
-        - Recap of scientific method, fundamental problem of causal inference
+        - Writing assignment (Monday)
+        - Recap of scientific method, cause and effect (Monday)
         - Introduction to experiments
         - Experimental design
         - Lab and Field experiments
@@ -42,6 +43,7 @@ editor: source
 
 ## Why give a hard exam and adjust the score?
 
+Has anyone every discussed why this is done? Any thoughts?
 
 
 ## Why give a hard exam and adjust the score?
@@ -52,15 +54,377 @@ editor: source
         - The exam is a learning tool
         - The exam is a credentialing tool 
         
+## Why give a hard exam and adjust the score?
+
+- Exam serves at least three functions
+
 - The functions require different things
 
         - The diagnostic and learning aspects both require a broad variation in outcomes, a wide frequency distribution of raw scores to measure differences and similarities across the class.
         - The credentialing aspect is why we adjust the scores.
         
+- Why not use an actual normal distribution to adjust the scores?
+
+## Why give a hard exam and adjust the score?
+
+- Exam serves at least three functions
+
+- The functions require different things
+
+        - The diagnostic and learning aspects both require a broad variation in outcomes, a wide frequency distribution of raw scores to measure differences and similarities across the class.
+        - The credentialing aspect is why we adjust the scores.
+
 - Why not use an actual normal distribution?
 
         - Upper division class
         - Distribution isn't usually normal
+        - A normal distribution would require some people to fail regardless of quality of work. It is possible everyone deserves the credential. It is possible though rarer that no one does. 
+        
+## Midterm results
+
+- Raw scores
+
+        - 3 raw scores of 40
+        - 2 raw scores of 39.5
+        - 9 raw scores of 37.5 to 38.5
+        - 3 raw scores of 37
+        - 17 people got all the available points or more
+        - Average raw score was 29.16, a C+
+        
+- Adjusted scores
+
+        - Adjusted average  30.09 (81.3%, a B-)
+        - Top adjusted score was 41
+
+- Biggest issues
+
+        - Not attempting written answers
+        - Written answers that were very shallow - "Because that's how we do it."
+        - Not reading the questions carefully
+        - Answers are posted. You may share them, but not with commercial websites including but not limited to Chegg or CourseHero.
+
+## Midterm results
+
+- Office hours
+- Email after reviewing answers
+
+
+## Minor procedures updates
+
+- Class dismissal time^[https://www.uh.edu/academics/courses-enrollment/enrollment-faq/#classes%20courses]
+
+        - 10 minutes to the hour, University policy for all classes
+        - Most courses are 90 minute courses, so 80 minutes of class time
+        - If you must leave early, please do not leave during the final five minutes of class
+        
+## Minor procedures updates
+
+- Class dismissal time^[https://www.uh.edu/academics/courses-enrollment/enrollment-faq/#classes%20courses]
+
+        - 10 minutes to the hour, do not leave during last five minutes of class
+
+
+- Written assignments
+
+        - If you must leave early and I have not collected them, you may leave them as you leave
+        - These are mostly learning tools, so I have generally given credit for good faith participation in the exercise
+        - Some require a bit more
+        
+- Discussion 
+
+## Minor procedures updates
+
+- Class dismissal time^[https://www.uh.edu/academics/courses-enrollment/enrollment-faq/#classes%20courses]
+
+        - 10 minutes to the hour, do not leave during last five minutes of class
+
+
+- Written assignments
+- Discussion
+
+        - Multiple comments from presenters about lack of discussion on articles
+        - Everyone needs to be reading these ahead of the class
+        - General class discussion - We are getting into less math intensive topics where more discussion is appropriate and expected
+
+## Questions on procedural issues
+
+Any questions?
+
+## Written assignment for today
+
+What is the research question in today's reading?
+
+- Grade range: 0.5 to 2 points
+- One point for at least naming the dependent (outcome, Y) variable
+
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+- What is science?
+
+- Scientific method
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        - What is a cause?
+
+- What is science?
+
+- Scientific method
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        - What is a cause?
+        - what is the general problem with finding true causes (includes two other problems)?
+
+
+- What is science?
+
+- Scientific method
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        - What is a cause?
+        - what is the general problem with finding true causes?
+        - What is the fundamental problem of causal inference? (Put differently: What is the hardest obstacle to determining true causes?)
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        - What is a cause?
+        - what is the general problem with finding true causes?
+        - What is the fundamental problem of causal inference? (Put differently: What is the main problem in determining true causes?)
+        - What is the problem in determining causes that statistical methods address?
+
+- What is science?
+
+- Scientific method
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect: Three sets of problems
+
+        - General problem - causes are complicated
+        - Fundamental problem - we can't observe the "what if" scenario directly (the counterfactual)
+        - There is a random element to the world (statistical problem)
+
+- What is science?
+
+- Scientific method
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+- What is science?
+
+        - Based on proof or evidence - concerns the world as it actually exists
+
+- Scientific method
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+- What is science?
+
+        - Based on proof or evidence
+        - About cause and effect - again the concern is with how the world actually works
+
+- Scientific method
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+- What is science?
+
+        - Based on proof or evidence
+        - About cause and effect
+        - Scientific method involving falsifiable hypotheses
+
+- Scientific method
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+- What is science?
+
+- Scientific method
+
+**The steps in the scientific method parallel the order of the sections in a research paper. **
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+- What is science?
+
+- Scientific method
+
+**The steps in the scientific method parallel the order of the sections in a research paper. **
+
+**What is step 1?**
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        
+- What is science?
+
+
+- Scientific method
+
+        1.  Define a *research question*
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        
+- What is science?
+
+
+- Scientific method
+
+        1.  Define a *research question*
+
+**In a paper we look two places. First, we review the current literature for answers to the question. Then we move to the next step a new theory and...**
+
+**The theory section includes what? (Step Two)**
+
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        
+- What is science?
+
+
+- Scientific method
+
+        1.  Define a *research question*
+        2.  Make predictions - *hypothesis*
+
+**Once we have predictions, we need to do two things to test them. What is step 3?**        
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        
+- What is science?
+
+
+- Scientific method
+
+        1.  Define a *research question*
+        2.  Make predictions - *hypothesis*
+        3.  Gather *data*
+        
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        
+- What is science?
+
+
+- Scientific method
+
+        1.  Define a *research question*
+        2.  Make predictions - *hypothesis*
+        3.  Gather *data*
+
+**After we have data, what do we do with it?**
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        
+- What is science?
+
+
+- Scientific method
+
+        1.  Define a *research question*
+        2.  Make predictions - *hypothesis*
+        3.  Gather *data*
+        4.  Analyze the data to *test* the hypothesis
+        
+**After testing the hypotheses, what do we do?**
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        
+- What is science?
+
+
+- Scientific method
+
+        1.  Define a *research question*
+        2.  Make predictions - *hypothesis*
+        3.  Gather *data*
+        4.  Analyze the data to *test* the hypothesis
+        5.  Draw conclusions
+        
+**Is drawing conclusions the end of the scientific process?**
+
+
+
+
+
+
+
+
+## Recap of scientific method, cause and effect
+
+- Cause and effect
+
+        - What is a cause?
+        - what is the general problem with finding true causes?
+        - What is the fundamental problem of causal inference? (Put differently: What is the main problem in determining true causes?)
+        - What is the problem in determining causes that statistical methods address?
+        
+- What is science?
+
+        - Based on proof or evidence
+        - About cause and effect
+        - Scientific method involving falsifiable hypotheses
+
+- Scientific method
+
+        1.  Define a *research question*
+        2.  Make predictions - *hypothesis*
+        3.  Gather *data*
+        4.  Analyze the data to *test* the hypothesis
+        5.  Draw conclusions - Start again at step 1
+
+
+
+
 
 
 ## Authorship, License, Credits
