@@ -1,0 +1,205 @@
+---
+title: |
+    | Lecture 11 - Natural Experiments
+    | Argument, Data, and Politics - POLS 3312
+date: March 25, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3311, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+# Recap of experimental design
+
+## What is an experiment?
+
+- An experiment is a controlled test of a hypothesis
+- To overcome the fundamental problem of causal inference: to allow the researcher to observe the "what if" scenario or counterfactual
+- Randomized, controlled trial
+
+        - manipulation by the researcher
+        - treatment group that gets the manipulation
+        - control group that does not get the manipulation (the counterfactual)
+        - random assignment to treatment and control groups
+        
+- The goal is to isolate the effect of the treatment on the outcome
+
+## What makes a good experiment
+
+- Internal validity
+
+        - attention to proper elements of design
+        - random assignment
+        
+- External validity
+
+        - generalizability of the results to the population of interest
+
+# Natural experiments
+
+## What is a natural experiment?
+
+- Observational study mimicking an experiment due to unique and unplanned circumstances
+- Unique and unplanned circumstances create a situation where the elements of a good experiment are present:
+
+        - manipulation
+        - treatment and control groups
+        - random assignment
+
+
+## What is a natural experiment?
+
+- The researcher does not manipulate the treatment
+- The researcher does not assign subjects to treatment and control groups
+
+## What is a natural experiment?
+
+- Some aspect of the situation creates a manipulation that only affects one group
+
+For example:
+
+        - A policy change
+        - A change in income or expenses
+        - A change in the environment
+
+
+
+## What is a natural experiment?
+
+- Some aspect of the situation assigns the treatment and control groups in an "as if random" manner
+
+For example:
+
+        - Two jurisdictions with different policies share a border
+        - A natural disaster that affects some but not all
+        - A lottery for a scarce resource
+        - Random allocation of benefits such as licenses
+
+
+## Example 1
+
+Prevailing theory was that cholera was caused by something in the air. John Snow believed it was caused by something in the water.
+
+
+
+## Example 1       
+
+https://www.youtube.com/watch?v=lNjrAXGRda4
+
+
+## Example 1
+
+Prevailing theory was that cholera was caused by something in the air. John Snow believed it was caused by something in the water.
+
+- Different water sources in buildings right next to each other
+
+        - some water is clean and some is contaminated
+        - the air is the same
+        - the assignment to clean or contaminated water is "as if random", an unpredictable and unbiased accident of circumstance
+        
+- Examined more than just the Broad Street pump
+
+## Example 2
+
+Does compulsory education affect earnings?^[Angrist, Joshua D., and Alan B. Krueger. “Does Compulsory School Attendance Affect Schooling and Earnings?” The Quarterly Journal of Economics 106, no. 4 (1991): 979–1014. https://doi.org/10.2307/2937954.]
+
+- Compulsory education cut off is by graduating class
+
+
+## Example 2
+
+Does compulsory education affect earnings?^[Angrist, Joshua D., and Alan B. Krueger. “Does Compulsory School Attendance Affect Schooling and Earnings?” The Quarterly Journal of Economics 106, no. 4 (1991): 979–1014. https://doi.org/10.2307/2937954.]
+
+- Compulsory education cut off is by graduating class
+- Date of birth is "as if random"
+
+
+## Example 2
+
+Does compulsory education affect earnings?^[Angrist, Joshua D., and Alan B. Krueger. “Does Compulsory School Attendance Affect Schooling and Earnings?” The Quarterly Journal of Economics 106, no. 4 (1991): 979–1014. https://doi.org/10.2307/2937954.]
+
+- Compulsory education cut off is by graduating class
+- Date of birth is "as if random"
+- Students born in the same class are otherwise comparable in most respects 
+
+        - students are randomly assigned based on quarters of years by birth date
+        - individual differences are randomly distributed to the four groups 
+        
+
+
+## Example 2
+
+Does compulsory education affect earnings?^[Angrist, Joshua D., and Alan B. Krueger. “Does Compulsory School Attendance Affect Schooling and Earnings?” The Quarterly Journal of Economics 106, no. 4 (1991): 979–1014. https://doi.org/10.2307/2937954.]
+
+- Compulsory education cut off is by graduating class
+- Date of birth is "as if random"
+- Students born in the same class are otherwise comparable in most respects 
+- Those born closer to the end of the school year can drop out sooner
+
+## Example 2
+
+> We establish that season of birth is related to educational attainment because of school start age policy and compulsory school attendance laws. Individuals born in the beginning of the year start school at an older age, and can therefore drop out
+after completing less schooling than individuals born near the end of the year. Roughly 25 percent of potential dropouts remain in school because of compulsory schooling laws. We estimate the impact of compulsory schooling on earnings by using quarter of birth as an instrument for education. The instrumental variables estimate of the return to education is close to the ordinary least squares estimate, suggesting that there is little bias in conventional estimates. 
+
+## Example 3
+
+Does the minimum wage affect employment?^[Card, David, and Alan B. Krueger. “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania.” The American Economic Review 84, no. 4 (1994): 772–93. https://doi.org/10.2307/2118030.]
+
+- Conventional economic theory argues that raising the minimum wage will reduce employment
+- New Jersey raised the minimum wage from $4.25 while Pennsylvania did not
+- The fast food industry is similar in both states and the two states share a border
+
+
+## Example 3
+
+>On April 1, 1992, New Jersey's minimum wage rose from $4.25 to $5.05 per hour. To evaluate the impact of the law we surveyed 410 fast-food restaurants in New Jersey and eastern Pennsylvania before and after the rise. Comparisons of employment growth at stores in New Jersey and Pennsylvania (where the minimum wage was constant) provide simple estimates of the effect of the higher minimum wage. We also compare employment changes at stores in New Jersey that were initially paying high wages (above $5) to the changes at lower-wage stores. We find no indication that the rise in the minimum wage reduced employment. (JEL 530, 523) 
+
+## Example 3: Criticisms of Card and Krueger
+
+Thomas Firey, Cato Institute Senior Fellow, offers criticism of a couple of key points of the Card and Krueger research.^[Thomas A. Firey, "No, Krueger Didn’t ‘Prove that Raising the Minimum Wage Doesn't Increase Unemployment’" EconLog. April 23, 2019. https://www.econlib.org/no-krueger-didnt-prove-that-raising-the-minimum-wage-doesnt-increase-unemployment/.] There are a variety of reasonable, academic opinions on the matter. Firey's comments provide a good reminder and example that **causes are complicated.**^[The following three slides are blockquotes from Firey.]
+
+
+
+
+## Example 3: Criticisms of Card and Krueger
+
+
+>I confess that I’m little-persuaded by Card and Krueger’s research, because it suffers from what I think is a serious flaw. Though they carried out their first-wave survey a few weeks before the minimum wage increase, the New Jersey law mandating the increase was enacted back in early 1990. That is, the fast-food chains had two years to prepare for the policy change. Employers typically don’t like to fire workers, so a rational strategy to prepare for the policy change would have been to reduce employment through attrition in anticipation of the policy change...
+
+## Example 3: Criticisms of Card and Krueger
+
+>rather than issue morale-crushing pink slips on March 31, 1992. 
+Indeed, Card and Krueger’s first-wave survey data show the Pennsylvania restaurants averaged 23.3 full-time-equivalent employees while the New Jersey restaurants averaged 20.4. 
+
+
+## Example 3: Criticisms of Card and Krueger
+
+>Card & Krueger’s article may tell us what that different action was: the New Jersey restaurants experienced a much sharper increase in menu prices than the Pennsylvania restaurants between the two survey waves. That phenomenon poses a problem for Card and Krueger’s monopsony hypothesis; apparently, the restaurant owners weren’t sitting on excess rents they had wrested away from the workers. The phenomenon is a good fit with my hypothesis, suggesting there weren’t many excess rents to begin with. And, it’s worth noting, price increases are an odd behavior in a recession.
+
+
+        
+
+
+
+
+
+
+## Authorship, License, Credits
+
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- Do not submit to Chegg or similar websites
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
