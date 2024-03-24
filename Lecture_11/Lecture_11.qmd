@@ -16,6 +16,20 @@ format:
 editor: source
 ---
 
+## Agenda
+
+- Today
+
+        - recap of experimental design
+        - Natural experiments
+        
+Wednesday 
+
+        - Article "Why do citizens prefer high-skilled immigrantso low-skilled immigrants? Identifying causal mechanisms of immigration preferences with a survey experiment." Research & Politics, 9(2). https://doi.org/10.1177/20531680221091439 
+
+        - In class activity
+        
+
 # Recap of experimental design
 
 ## What is an experiment?
