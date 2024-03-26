@@ -1,0 +1,55 @@
+---
+title: |
+    | Lecture 12 - Experiments
+    | Argument, Data, and Politics - POLS 3312
+date: March 27, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3311, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+## Agenda 
+
+- Today
+
+        - Review results of Monday randomization activity
+
+        - Article "Why do citizens prefer high-skilled immigrantso low-skilled immigrants? Identifying causal mechanisms of immigration preferences with a survey experiment." Research & Politics, 9(2). https://doi.org/10.1177/20531680221091439 
+
+        - In class activity
+        
+
+        
+
+- For next time
+
+        - Begin observational studies: variable types, sampling, and measurement
+        - Recommended reading: https://nulib-oer.github.io/empirical-methods-polisci/data.html sections on variable types, sampling, and measurement
+        - The remainder of that chapter are topics we previously covered, but may be useful for review towards the final exam
+
+
+
+
+
+
+
+## Authorship, License, Credits
+
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- Do not submit to Chegg or similar websites
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>   
