@@ -36,6 +36,162 @@ editor: source
         - The remainder of that chapter are topics we previously covered, but may be useful for review towards the final exam
 
 
+## Monday Activity
+
+- I asked for:
+
+        - Your month and day of birth
+        - Your minor or major that is not political science
+        
+- I then assigned each observation based on the quarter of the year (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec)
+- The birthdate provides an "as if" random assignment to the four groups
+
+## Monday Activity Results
+
+```{r echo=FALSE}
+library(tidyverse)
+library(here)
+library(knitr)
+library(kableExtra)
+
+data <- read.csv(here("Data", "birthdays_majors_minors.csv"))
+
+
+# convert to numeric
+
+data <- data %>%
+  mutate(Birth.quarter = as.numeric(Birth.quarter))
+
+
+
+
+
+# # convert Birthdate variable Unknown to 99
+# 
+# data <- data %>%
+#   mutate(Birthdate = case_when(
+#     Birthdate == "Unknown" ~ 99,
+#     TRUE ~ Birthdate
+#   ))
+
+
+# Report only the number of observations, mean, median, and mode for each variable in a table of 75% of text width
+
+library(stargazer)
+stargazer(summary(data), type="text")
+
+
+```
+
+## Monday Activity Results 
+
+
+```{r echo=FALSE}
+# distribution of Birth Quarters
+# variable name is Birth.quarter
+# use horizontal red bars
+
+data %>%
+  ggplot(aes(x=as.factor(Birth.quarter))) +
+  geom_bar(fill="red") +
+  coord_flip() +
+  labs(title="Distribution of Birth Quarters", x="Birth Quarter", y="Count") +
+  theme_minimal() +
+  theme(legend.position="top")
+
+
+
+
+```
+
+## Monday Activity Results
+
+```{r echo=FALSE}
+
+# Distribution of Birthdate variable name is Birthdate
+# variable type is chr
+# use horizontal bars for distribution
+
+data %>%
+  ggplot(aes(x=Birthdate)) +
+  geom_bar() +
+  coord_flip() +
+  labs(title="Distribution of Birthdates", x="Birthdate", y="Count") +
+  theme_minimal() +
+  theme(legend.position="top")
+
+
+
+
+
+```
+
+
+
+
+
+
+## Monday Activity Results
+
+```{r echo=FALSE}
+
+# Distribution of Major.minor overall using ggplot
+# horizontal bars
+
+data %>%
+  ggplot(aes(x=Major.minor)) +
+  geom_bar() +
+  coord_flip() +
+  labs(title="Distribution of Majors/Minors", x="Major/Minor", y="Count") +
+  theme_minimal() +
+  theme(legend.position="top")
+
+
+
+```
+
+
+## Monday Activity Results
+
+```{r echo=FALSE}
+
+# Distribution of Majors/Minors by Birth Quarter
+# Horizontal bars
+
+data %>%
+  ggplot(aes(x=Major.minor, fill=as.factor(Birth.quarter))) +
+  geom_bar(position="dodge") +
+  coord_flip() +
+  labs(title="Distribution of Majors/Minors by Birth Quarter", x="Major/Minor", y="Count") +
+  theme_minimal() +
+  theme(legend.position="top")
+
+
+
+
+
+
+```
+
+
+## Article Discussion
+
+"Why do citizens prefer high-skilled immigrantso low-skilled immigrants? Identifying causal mechanisms of immigration preferences with a survey experiment." Research & Politics, 9(2). https://doi.org/10.1177/20531680221091439 
+
+
+## In Class Activity
+
+- In this activity, we are going to use a survey experiment vignette from an international relations study. I will give you full information on the study after the activity.
+- I am doing the same activity with the other section of POLS 3312 with a different vignette (treatment) and I will show you full results after both classes have done it.
+- Both classes will have a treatment and control group.
+- This is not for use outside of this class. For a variety of reasons, this is a simulation, not a reliable experiment. 
+
+## In Class Activity
+
+- You will be randomly assigned to a group.
+- The two groups will separate to opposite ends of the room, receive their survey, and complete it.
+- You can then return to your regular seat and we will compile the results.
+
 
 
 
