@@ -1,0 +1,393 @@
+---
+title: |
+    | Lecture 13 and 14 - Observational Studies Part 1
+    | Argument, Data, and Politics - POLS 3312
+date: April 1 to April 3, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3311, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+## Agenda 
+
+- April 1 (April 3)
+
+        - Variable Types
+        - Types of observational studies 
+        
+- April 3 (Wednesday)
+
+        - Reading: Terrorism before and after 9/11 – a more dangerous world? (Smith, M., & Zeigler, S. M. (2017). Terrorism before and after 9/11 – a more dangerous world? Research & Politics, 4(4). https://doi.org/10.1177/2053168017739757)
+        - Sampling and Case Selection
+
+        - Sampling and case selection 
+        - Measurement 
+        
+- April 8 (Next Monday)
+
+        - Reading: Gerrymandering or geography? How Democrats won the popular vote but lost the Congress in 2012 (Goedert, N. (2014). Gerrymandering or geography? How Democrats won the popular vote but lost the Congress in 2012. Research & Politics, 1(1). https://journals.sagepub.com/doi/10.1177/2053168014528683
+
+
+        
+# Variable Types
+
+## Variable types
+
+- Qualitative
+
+        - text, video, audio
+        
+## Variable types
+
+- Qualitative
+
+        - text, video, audio
+        - These can be evaluated by machine, but not by simple statistical methods
+        
+
+## Variable types
+
+- Qualitative
+
+        - text, video, audio
+        - categorical variables are an in-between case
+        
+## Variable types
+
+- Qualitative
+
+        - text, video, audio
+        - categorical variables are an in-between case 
+        
+## Categorical variables
+
+Midterm and Final Exam Question: What are the three main measures of central tendency?
+Midterm and Final Exam Question: What is the only measure of central tendency we can use with categorical variables?
+Midterm and Final Exam Question: What is the hypothesis test *used in class* for categorical variables? 
+
+## Categorical variables
+
+Midterm and Final Exam Question: What are the three main measures of central tendency? Mean, median, mode
+Midterm and Final Exam Question: What is the only measure of central tendency we can use with categorical variables? Mode
+Midterm and Final Exam Question: What is the hypothesis test *used in class* for categorical variables? Chi-square test
+
+
+## Categorical variables
+
+- nominal variables
+
+        - Example: colors = red, green, blue, orange
+        - Example: species = canis lupus, equis quagga, elephas maximas
+        - These are "name" variables. Nominal comes from a Latin root meaning name. Nominal in other contexts means, "in name only."
+        
+## Categorical variables
+
+- nominal variables
+
+        - Example: colors = red, green, blue, orange
+        - We can assign numbers. red = 1, green = 2, blue = 3, orange = 6. 
+        - Is orange divided by blue = green?
+        
+        
+## Categorical variables
+
+- nominal variables
+
+        - Example: colors = red, green, blue, orange
+        - We can assign numbers. red = 1, green = 2, blue = 3, orange = 6. 
+        - Is orange divided by blue = green? NO!
+        
+
+        
+## Categorical variables
+
+- nominal variables
+- ordinal variables
+
+        - These are nominal variables that are in a ranked order (ORDer = ORDinal)
+
+## Categorical variables
+
+- nominal variables
+- ordinal variables
+
+        - These are nominal variables that are in a ranked order (ORDer = ORDinal)
+        - Example: education = high school, some college, college degree, graduate degree
+        
+
+## Categorical variables
+
+- nominal variables
+- ordinal variables
+
+        - These are nominal variables that are in a ranked order (ORDer = ORDinal)
+        - Example: education = high school, some college, college degree, graduate degree
+        - We can assign numbers. high school = 1, some college = 2, college degree = 3, Master's degree = 4, Ph.D. = 6
+        - Is Ph.D divided by college degree = some college?
+
+## Categorical variables
+
+- nominal variables
+- ordinal variables
+
+        - These are nominal variables that are in a ranked order (ORDer = ORDinal)
+        - Example: education = high school, some college, college degree, graduate degree
+        - We can assign numbers. high school = 1, some college = 2, college degree = 3, Master's degree = 4, Ph.D. = 6
+        - Is Ph.D divided by college degree = some college?
+        - NO!
+
+## Categorical variables
+
+- Often considered qualititave
+
+## Categorical variables
+
+- Often considered qualititave because:
+
+        - They are not ratios (two is not twice as much as one)
+        - We can't add, subtract, multiply, divide them by each other or by other variables
+        - They don't have means or medians
+        
+## Categorical variables
+
+- Often considered qualititave because:
+- They are also quantitatve because:
+
+        - We can count them
+        - We can calculate percentages
+        - We can calculate modes
+        - There are statistical tests and procedures specific to them (chi-square, ordered logistic regression, categorical regression)
+
+
+## Variable types
+
+- Qualitative
+- Quantitative
+
+        - Discrete
+        - Continuous
+        
+## Variable types
+
+- Discrete
+        
+        - Count variables
+        
+## Variable types
+
+- Discrete
+        
+        - Count variables
+        - Whole numbers
+        
+## Variable types
+
+- Discrete
+        
+        - Count variables
+        - Whole numbers
+        - Example: number of children in a family, number of cars in a parking lot, number of votes in an election
+        
+        
+## Variable types
+
+- Discrete
+        
+        - Count variables
+        - Whole numbers
+        - Example: number of children in a family, number of cars in a parking lot, number of votes in an election
+        - Still can be treated as ratios but have some limitations
+   
+## Variable types
+
+- Continuous
+
+        - Can take on any value in a range
+        - Example: temperature, weight, height, income, age
+        - The simplest dividing line is whether it can take less than a whole number value: a decimal value or a fraction
+        
+
+# Observational Studies
+
+## Types of observational studies
+
+- By size
+- By method
+
+## Types of observational studies
+
+- By size
+
+        - Case studies
+        - Small-n
+        - Large-n
+        
+## Types of observational studies
+
+Case studies
+
+For simplicity, I am going to refer to countries as the unit of analysis. The same techniques can apply to other units of analysis including but not limited to states, cities, counties, voting precincts, regions within a country, regions across countries, individuals, households, firms, non-profit organizations, or just about any unit of human behavior you can imagine. 
+        
+## Types of observational studies
+
+Case studies
+
+- Single country case study 
+- two country comparison
+
+## Types of observational studies
+
+Single country case study
+
+- Typically a detailed examination of the events leading to some outcome of interest
+
+
+## Types of observational studies
+
+Single country case study
+
+- Typically a detailed examination of the events leading to some outcome of interest
+- Often used for exploratory research
+- Good for theory development
+
+## Types of observational studies
+
+Single country case study
+
+- Typically a detailed examination of the events leading to some outcome of interest
+- Often used for exploratory research
+- Good for theory development
+
+## Types of observational studies
+
+
+Single country case study
+
+Two concerns: generalizability (external validity) and lack of control group.  
+ 
+- What is a way that a single country study could partially overcome these?
+        
+## Types of observational studies
+
+Single country case study
+
+Two concerns: generalizability (external validity) and lack of control group.  
+ 
+- What is a way that a single country study could partially overcome these? 
+
+        - Comparing the country across time
+        - The country is its own control group before and after the treatment
+        - The "country fixed effects" like culture and institutions are slow to change, so they are typically the same before and after
+        - Other time varying effects (income, population, conflict status, etc.) can be explicitly controlled for in the analysis
+        
+
+
+## Types of observational studies
+
+- By size
+
+        - Case studies (1 or 2 countries)
+        - Small-n: Three to XX 
+        - Large-n: XX countries
+        
+Question: Based on what we discussed with regard to t-tests, z-scores, and the Central Limit Theorem, what number would you choose as the minimum dividing line between Small-n and Large-n studies? Briefly explain why. (Please write your number as digits, then explain.)
+
+## Types of observational studies
+
+- By size
+
+        - Case studies (1 or 2 units of observation)
+        - Small-n: Three to at least 30 units of observation
+        - Medium-n: 31 to some number depending on the context
+        - Large-n: at least 31 units of observation
+
+## Types of observational studies
+
+- By type
+
+        - Cross-sectional
+        - Time series
+        - Longitudinal or Panel data 
+        - Cohort studies
+        
+## Types of observational studies
+
+Cross-sectional
+
+        - Data collected at one point in time
+        - This includes one-off survey data
+        - Unit of analysis is simple: country, state, city, etc.
+        
+## Types of observational studies
+
+Time series: Same data at different points in time
+
+        - Data collected at multiple points in time
+        - Unit of analysis would be country-year, state-year, city-year, country-month, etc.
+
+
+## Types of observational studies
+
+Longitudinal or Panel data: Same subjects at different points in time
+
+        - Data collected at multiple points in time
+        - Unit of analysis would be country-year, state-year, city-year, country-month, etc.
+        - The same unit of analysis is observed at multiple points in time
+        - For survey panel data, the same individuals are surveyed at multiple points in time
+
+## Types of observational studies
+
+Cohort studies (common in medical research)
+
+        - A cohort is a group of people who share a common characteristic or experience within a defined period
+        - The unit of analysis is the cohort
+        - The cohort is followed over time
+        - Example: a group of people born in 1980, a group of people who started smoking in 2000, a group of people who started a new job in 2010, etc.
+  
+## Reminders for Wednesday  
+        
+- April 3 (Wednesday)
+
+        - Reading: Terrorism before and after 9/11 – a more dangerous world? (Smith, M., & Zeigler, S. M. (2017). Terrorism before and after 9/11 – a more dangerous world? Research & Politics, 4(4). https://doi.org/10.1177/2053168017739757)
+        - Sampling and Case Selection
+
+        - Sampling and case selection 
+        - Measurement 
+
+## Sampling and case selection
+
+
+
+## Measurement
+
+
+
+## Reminder for next week
+
+- April 8 (Next Monday)
+
+        - Reading: Gerrymandering or geography? How Democrats won the popular vote but lost the Congress in 2012 (Goedert, N. (2014). Gerrymandering or geography? How Democrats won the popular vote but lost the Congress in 2012. Research & Politics, 1(1). https://journals.sagepub.com/doi/10.1177/2053168014528683
+
+        
+        
+## Authorship, License, Credits
+
+- Do not submit to Chegg or similar websites
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>   
+        
+        
