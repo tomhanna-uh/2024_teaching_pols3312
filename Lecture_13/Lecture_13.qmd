@@ -364,6 +364,440 @@ Cohort studies (common in medical research)
 
 ## Sampling and case selection
 
+- Case selection: picking the study population(s)
+- Sampling: choosing units *from* the study populations to observe
+
+
+## Sampling and case selection
+
+- This is not "either or"
+
+        - There is often overlap with studies doing both
+        - Case selection can narrow the overall pool for sampling, then good sampling further improves the quality of the study
+        
+- Except when it is
+
+        - The smallest studies may make sampling impractical 
+        - Large-n may mean sampling from all cases that are available and meet the criteria
+
+
+
+## Case selection
+
+- Case selection: picking the study population
+
+        - narrowing the intellectual focus (areas of interest)
+        - major focus in case studies and small-n
+        - improving external validity and causal inference are key
+
+
+## Case selection
+
+Narrowing the intellectual focus (areas of interest)
+
+Why?
+
+
+## Case selection
+
+- Manageability
+
+There are limited resources, so it is more effective to focus on the cases that will yield the clearest results. 
+
+
+## Case selection
+
+How?
+
+
+## Case selection
+
+
+Good representation of overall population 
+
+- This contributes to external validity/generalizability
+
+## Case selection
+
+
+Good representation of overall population 
+
+- This contributes to external validity/generalizability
+- This does not mean we have to capture every detail of the population - previous research can inform the selection
+
+
+
+## Case selection
+
+
+Good variability in independent variables 
+
+- This is necessary in order to test hypotheses.
+
+## Case selection
+
+
+- Good variability in independent variables 
+
+- This is necessary in order to test hypotheses.
+- No variation in the Xs means we have nothing to compare in terms of the cause. 
+
+
+## Case selection
+
+
+- Good variability in independent variables 
+
+- This is necessary in order to test hypotheses.
+- No variation in the Xs means we have nothing to compare in terms of the cause. 
+- Variation in the dependent variable (the effect) is also necessary, but can be as simple as a binary outcome (e.g. war or no war)
+
+## Case selection
+
+
+- Good variability in independent variables 
+
+- This is necessary in order to test hypotheses.
+- No variation in the Xs means we have nothing to compare in terms of the cause. 
+- What about the dependent variable?
+
+- Variation in the dependent variable (the effect) is also necessary, but can be as simple as a binary outcome (e.g. war or no war)
+
+## Case selection
+
+
+- What about variation in the dependent variable
+
+- In small-n studies, variation in the dependent variable (the effect) is also necessary, but can be as simple as a binary outcome (e.g. war or no war)
+
+## Case selection
+
+
+- What about variation in the dependent variable
+
+- In a two case study there are two options:
+
+        - if the outcome (DV or Y) is the same, we would want cases where everything except the X is different. (Method of Similarity or Method of Agreement)
+        
+## Case selection
+
+
+- What about variation in the dependent variable (Y)
+
+- In a two case study:
+
+        - if the outcome (Y) is the same, we would want cases where everything except the X is different. 
+        
+        - if the outcome (Y) is different, we would want cases where the Xs are different but all the other things we can measure are the same. (Method of Difference)
+
+## Case selection
+
+Finding cases that will interest readers
+
+- If cases are not of interest, the study will not be read.
+        
+## Case selection
+
+Finding cases that will interest readers
+
+- If cases are not of interest, the study will not be read.
+
+- More importantly, if the cases are not interesting *to people in the field*, it may indicate that the topic is really **not important.**
+
+
+
+## Case selection
+
+- Good representation of overall population
+- Good variability in independent variables
+- Finding cases that will interest readers
+- Finding cases that match the interest/expertise of the researcher
+
+
+## Case selection
+
+Finding cases that match the interest/expertise of the researcher
+
+- This is partially about managing resources, specifically the researcher's time and energy
+- This is also a matter of the researcher's expertise contributing to the quality of the research
+- This is also about the researcher's interest in the topic adding to the interest for the reader
+
+
+## Case selection: Questions of the day
+
+- Think of a research question of interest to you - an outcome or dependent variable you are interested in. Don't worry about causes, just think about the effect you want to explain. 
+- Is there a case that you think would be interesting to study in relation to that outcome? Describe briefly how it is related and why it would appropriate. 
+- **This may be the case that inspired your interest in the topic! If so, explain how.**
+
+
+## case selection
+
+Case selection: picking the study population
+
+- major focus in case studies and small-n
+
+"case studies are case centered" as are small-n studies^[Blatter, J. and Haverland, M. (2012). Designing case studies.. https://doi.org/10.1057/9781137016669]
+
+
+## Case selection
+
+Improving external validity and causal inference are key
+
+        - representative population
+        - variation in variables to allow for testing
+        - and...
+        
+## Case selection
+
+Improving external validity and causal inference are key
+
+- adequate control variables 
+
+Control variables are the other potential causes that we can measure
+
+## Case selection
+
+Improving external validity and causal inference are key
+
+- adequate control variables 
+
+A good sample of control variables with good measurement (low error) helps us improve both generalizability and causal inference
+
+
+## Case selection
+
+Improving external validity and causal inference are key
+
+- adequate control variables 
+
+Good use of control variables helps us with the fundamental problem of causal inference - it offers a similar case that can partially substitute for a true counterfactual or "what if" scenario
+
+
+## Sampling and case selection
+
+- Case selection: picking the study population
+
+        - major focus in case studies and small-n
+        - narrowing the intellectual focus for manageability and interest
+        - improving external validity is important
+
+
+        
+- Sampling: selecting units*from* the study population to observe
+
+        - "variable centered" focus to solve problems of validity and causal inference
+        - Challenges in sampling
+        - Stages of sampling
+        - Types of sampling
+
+## Sampling
+
+Large-n studies are "variable centered"^[^[Blatter, J. and Haverland, M. (2012). Designing case studies.. https://doi.org/10.1057/9781137016669]
+
+- Because of the size, the focus is on drawing a large *sample* that will have representative variables rather than manually selecting a small number of cases
+- Often this means some sort of *random sampling* but not always
+
+
+
+## Challenges in sampling
+
+Population size
+
+- Sufficient size to allow for generalization
+- Sufficient sampling size to allow for generalization
+
+
+## Challenges in sampling
+
+Sampling bias
+
+- Selection is *correlated* with the *independent variable*
+
+## Challenges in sampling
+
+Sampling bias
+
+        - Selection is *correlated* with the *independent variable*
+        - Systematically non-representative of the population
+        
+## Challenges in sampling
+
+Selection bias
+
+- Selection is *correlated* with the *dependent variable*
+- Underestimates the relationship between the independent and dependent variables
+
+
+## Challenges in sampling
+
+Non-response bias
+
+- The sample is not representative of the population because of who chooses to participate or the data that is available
+
+
+
+## Stages of sampling
+
+- Define the population
+
+## Stages of sampling
+
+- Define the population
+- Choose the sampling frame
+
+The portion of the population that is available for sampling
+
+
+## Stages of sampling
+
+- Define the population
+- Choose the sampling frame
+- Choose a sample from the sampling frame
+
+Select the sample using some established technique
+
+
+
+## Types Sampling
+
+- Probability (random) sampling
+- Non-probability sampling
+        
+## Types Sampling
+
+- Probability (random) sampling
+
+Advantages:
+
+- Easy Generalizability
+- Less scope for researcher bias
+- Less systematic error because of unbiased selection
+
+## Types Sampling
+
+Probability (random) sampling
+
+- Simple random sampling
+- Stratified random sampling
+- Cluster sampling
+- Systematic sampling
+
+
+## Types Sampling
+
+Probability (random) sampling
+
+- Simple random sampling - every individual (unit) has an equal chance of being selected
+
+## Types Sampling
+
+Probability (random) sampling
+
+- Simple random sampling
+- Stratified random sampling 
+
+        - divide the population into groups (strata) based on shared characteristics and then randomly select from each group
+        - Used to ensure inclusion of certain groups
+        
+
+
+## Types Sampling
+
+Probability (random) sampling
+
+- Simple random sampling
+- Stratified random sampling 
+- Cluster sampling
+
+        - divide the population into groups (clusters) and then select clusters to sample from
+        - Once clusters are selected individuals are sampled using random or stratified random sampling
+        - For example, a study of US citizens might group citizens by city, then select specific cities to sample from
+        - Used when the population is geographically dispersed or difficult to access
+        
+## Types Sampling
+
+Probability (random) sampling
+
+- Simple random sampling
+- Stratified random sampling
+- Cluster sampling
+- Systematic sampling
+
+        - Select every nth individual from the sampling frame
+        - Starting point is selected randomly
+        - For example, every 10th person on a list of registered voters
+        - Used when the population is ordered in some way
+
+
+## Types Sampling
+
+Non-probability sampling
+
+- Convenience sampling
+- Judgmental sampling
+- Snowball sampling
+- Quota sampling
+
+## Types Sampling
+
+Non-probability sampling
+
+- Convenience sampling (accidental sampling)
+
+        - Selecting the most convenient individuals
+        - Often used in small-n studies/exploratory research
+        - Useful when resources are limited
+        - May introduce significant accidental bias and reduce generalizability
+        
+## Types Sampling
+
+Non-probability sampling
+
+- Convenience sampling (accidental sampling)
+- Judgmental sampling (purposive sampling)
+
+        - Selecting individuals based on the researcher's judgment and expertise 
+        - Often used in small-n studies/exploratory research
+        - Useful when resources are limited
+        - May introduce significant accidental bias and reduce generalizability
+        - May raises questions about cherry-picking data
+        
+## Types Sampling
+
+Non-probability sampling
+
+- Convenience sampling (accidental sampling)
+- Judgmental sampling (purposive sampling)
+- Snowball sampling
+
+        - Used when the population is difficult to access
+        - Initial participants refer the researcher to other participants
+        - Useful when the population is small or hard to reach (Example: HIV/AIDS research, drug users, homeless people)
+        - Limited generalizability because it draws on a group of associated indviduals, magnifies shared characteristics
+        
+## Types Sampling
+
+Non-probability sampling
+
+- Convenience sampling (accidental sampling)
+- Judgmental sampling (purposive sampling)
+- Snowball sampling
+- Quota sampling
+
+        - Sorting individuals into categories using "control characteristics"
+        - Selecting individuals from the categories using convenience or judgmental sampling
+        - Similar to stratified random sampling but without random selection
+        - Useful when the population is difficult to access, small, or hard to reach
+        - Potentially introduces bias at both stages, sorting and selection
+        
+
+        
+
+        
+
+
+
+
 
 
 ## Measurement
