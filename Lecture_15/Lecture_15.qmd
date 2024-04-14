@@ -1,0 +1,303 @@
+---
+title: |
+    | Lecture 15 - Observational Studies
+    | Argument, Data, and Politics - POLS 3312
+date: April 15, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3311, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+## Agenda
+
+- Review
+- Measurement
+
+Wednesday 
+
+= Revisiting white backlash: Does race affect death penalty opinion? (Butler, R., Nyhan, B., Montgomery, J. M., & Torres, M. (2018). Revisiting white backlash: Does race affect death penalty opinion? Research & Politics, 5(1) https://journals.sagepub.com/doi/10.1177/2053168017751250
+
+## Review
+
+
+## Why does proper measurement matter?
+
+
+
+## Why does proper measurement matter?
+
+- Measurement is the foundation of all research
+- If we want to know the relationship between X and Y, we need precise measures of X and Y
+- If we don't have precise measures, we may not be measuring the relationship we think we are
+
+
+## Measurement
+
+Measurement needs to be two things:
+
+- **Reliable**
+- **Valid**
+
+
+## Measurement
+
+**Reliable**
+
+- The results are consistent if you measure the same thing
+- If X = 5, it should always be 5 (or very close)
+
+
+## Measurement
+
+**Valid**
+
+- The measure actually measures what you think it measures
+- If you are measuring height, you use a ruler, not a scale
+- This has a lot to do with precisely defining what is being measured, with having **conceptual clarity** about the variable
+
+## Conceptual Clarity
+
+- **Conceptual clarity** is the idea that we need to know what we want to measure
+- For example, if we want to measure a country's relative wealth or poverty, do we mean:
+
+        - Total national income (Gross Domestic Product or GDP)
+        - Average income per person (GDP per capita)
+        - Poverty rate (percentage of people below a certain income level)
+        
+Do we consider inequality in wealth or just the mean?
+
+        - Income inequality (Gini coefficient)
+        - Median income (the income of the person in the middle of the income distribution)
+
+
+## Measurement: Example
+
+Human rights violations
+
+- How could you potentially measure human rights violations?
+
+
+
+## Measurement: Example
+
+Human rights violations measures
+
+- Single source measure or index (e.g. Amnesty International, Human Rights Watch, The Lawyers, Committee for Human Rights, or US State Department)
+
+Would this pose a problem for validity, reliability, both, or neither? Why?
+
+
+## Measurement: Example
+
+Human rights violations measures
+
+- Single source measure or index (e.g. Amnesty International, Human Rights Watch, The Lawyers, Committee for Human Rights, or US State Department)
+
+Would this pose a problem for validity, reliability, both, or neither? Why? 
+
+The biggest issue would be validity if the researcher is not clear about the sources definition of a violation. 
+
+
+
+## Measurement: Example
+
+Human rights violations measures
+
+- Count of news references to human rights violations
+
+Would this pose a problem for validity, reliability, both, or neither? Why? 
+
+## Measurement: Example
+
+Human rights violations measures
+
+- Count of news references to human rights violations
+
+Would this pose a problem for validity, reliability, both, or neither? Why? 
+
+The measure is not reliable because it is dependent on the changing nature and people involved in the news business.^[This may be correctable.] 
+
+The measure may not be valid because human rights violation may not be well defined by different sources and journalists.^[If this is consistent it may be corrected by researching their definitions.] 
+
+
+## Measurement: Example
+
+- Compilation of NGO reports
+
+Would this pose a problem for validity, reliability, both, or neither? Why? 
+
+## Measurement: Example
+
+- Compilation of NGO reports 
+
+Would this pose a problem for validity, reliability, both, or neither? Why? 
+
+This measure is reliable, as long as the NGO reports are consistent or changes are transparently documented.
+
+This measure is valid if the researcher understands the NGO definitions of violations.
+
+## Measurement Errors and Bias
+
+Types of errors
+
+- **Systemic bias**
+- **Random measurement error**
+- **Unreliable measurement**
+
+## Measurement Errors and Bias
+
+**Systemic bias**
+
+- The measure is consistently off in one direction
+
+
+## Measurement Errors and Bias
+
+**Systemic bias**
+
+- The measure is consistently off in one direction
+- Example: A survey that always undercounts a certain group
+
+## Measurement Errors and Bias
+
+**Systemic bias**
+
+- The measure is consistently off in one direction
+- Example: A survey that always undercounts a certain group
+- This causes our results to be biased in one direction
+
+## Measurement Errors and Bias
+
+**Random measurement error**
+
+- due to chance
+
+## Measurement Errors and Bias
+
+**Random measurement error**
+
+- due to chance
+- no upward or downward bias
+
+## Measurement Errors and Bias
+
+**Random measurement error**
+
+- due to chance
+- no upward or downward bias
+- Example: Likert scale surveys (strongly agree, etc.) where the mood of respondents may affect their answers
+
+## Measurement Errors and Bias
+
+**Random measurement error**
+
+- due to chance
+- no upward or downward bias
+- Example: Likert scale surveys (strongly agree, etc.) where the mood of respondents may affect their answers
+- Too much error causes less precise results
+
+## Measurement Errors and Bias
+
+**Random measurement error**
+
+- due to chance
+- no upward or downward bias
+- Example: Likert scale surveys (strongly agree, etc.) where the mood of respondents may affect their answers
+- Too much error causes less precise results
+- This can be corrected by increasing the sample size
+
+## Measurement Errors and Bias
+
+**Random measurement error**
+
+- due to chance
+- no upward or downward bias
+- Example: Likert scale surveys (strongly agree, etc.) where the mood of respondents may affect their answers
+- Too much error causes less precise results
+- This can be corrected by increasing the sample size
+- Too much random error makes the measurement unreliable
+
+## Measurement Error Example
+
+**Human rights violations measures**
+
+Count of news references to human rights violations
+
+- What type of error is most likely to be present in this measure? Why?
+
+
+## Measurement Error Example
+
+**Human rights violations measures**
+
+Count of news references to human rights violations
+
+- What type of error is most likely to be present in this measure? Why? Random measurement error
+
+
+
+## Measurement Error Example
+
+**Human rights violations measures**
+
+Count of news references to human rights violations
+
+- What type of error is most likely to be present in this measure? Why? **Random measurement error**
+
+- Can we fix it? How?
+
+## Measurement Error Example
+
+**Human rights violations measures**
+
+Count of news references to human rights violations
+
+- What type of error is most likely to be present in this measure? Why? **Random measurement error**
+
+- Can we fix it? How? Yes. **Sufficient sample size**
+
+## Measurement Example Question
+
+We want to measure **political intolerance** on college campuses. We use the question from a 1950s study: "Should a communist be allowed to teach in a college or university?"
+
+- What type of error is most likely to be present in this measure? Why?
+
+
+## Measurement Example Question
+
+We want to measure political intolerance on college campuses. We use the question from a 1950s study: "Should a communist be allowed to teach in a college or university?"
+
+- What type of error is most likely to be present in this measure? Why?
+
+If we asked instead, "Should a capitalist be allowed to teach in a college or university?" would we get the same result? 
+
+## Measurement Example Question
+
+We want to measure political intolerance on college campuses. We use the question from a 1950s study: "Should a communist be allowed to teach in a college or university?"
+
+If we asked instead, "Should a capitalist be allowed to teach in a college or university?" would we get the same result?
+
+- Probably not, because the single questions in isolation are measuring agreement with the political ideology as much as they are measuring tolerance. This is a problem with **validity**.
+
+
+## Authorship, License, Credits
+
+- Do not submit to Chegg or similar websites
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>   
+        
+        
