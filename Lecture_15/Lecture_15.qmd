@@ -27,6 +27,24 @@ Wednesday
 
 ## Review
 
+- **Cause and effect** are what science is about
+- **Causality** - finding the X (or Xes) that Y does not happen without
+- Three basic problems in inferring causality
+
+        - Random world - coincidence due to random chance
+        - Causes are complicated - reverse causation, common causes, other links. Solving this is complicated further by the fundamental problem. 
+        - The fundamental problem: we can't observe the counterfactual or "what-if" scenario
+        
+## Review
+
+- Random chance is dealt with using statistics and sufficient sample size
+- Complicated causes are dealt with by a combination of theory, research design, control variables, and statistical modeling
+- The fundamental problem is dealt with by using research design
+
+        - **Experimental design** - the gold standard
+        - **Observational design** - doing our best to simulate the counterfactual, often from multiple angles
+
+
 
 ## Why does proper measurement matter?
 
@@ -286,6 +304,14 @@ We want to measure political intolerance on college campuses. We use the questio
 If we asked instead, "Should a capitalist be allowed to teach in a college or university?" would we get the same result?
 
 - Probably not, because the single questions in isolation are measuring agreement with the political ideology as much as they are measuring tolerance. This is a problem with **validity**.
+
+
+
+## Reminder for Wednesday
+
+**READ**
+
+= Revisiting white backlash: Does race affect death penalty opinion? (Butler, R., Nyhan, B., Montgomery, J. M., & Torres, M. (2018). Revisiting white backlash: Does race affect death penalty opinion? Research & Politics, 5(1) https://journals.sagepub.com/doi/10.1177/2053168017751250
 
 
 ## Authorship, License, Credits
