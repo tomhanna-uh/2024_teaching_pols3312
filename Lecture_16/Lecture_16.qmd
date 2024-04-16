@@ -1,0 +1,238 @@
+---
+title: |
+    | Lecture 15 - Observational Studies
+    | Argument, Data, and Politics - POLS 3312
+date: April 15, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3311, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+## Schedule
+
+- Today 
+
+        - Survey introduction
+        -  Revisiting white backlash: Does race affect death penalty opinion?  https://doi.org/10.1177/2053168017751250
+        
+- Monday, April 22: 
+
+        - How science and data can be used in law and policy making
+        - Female combatants, forced recruitment, and civil conflict outcomes https://doi.org/10.1177/2053168018770559
+
+- Wednesday, April 24: 
+
+        - Using MI-LASSO to study populist radical right voting in times of pandemic https://doi.org/10.1177/20531680241228358)
+                - Understanding articles when the methods are well beyond your expertise: examples from MI-LASSO article
+
+- Monday, April 29: More on surveys and polls, final review
+
+## Ideas from Monday: Human Rights Measurement
+
+- Starting with a definition. What is a human rights violation? This is vital for what?
+
+## Ideas from Monday: Human Rights Measurement
+
+- Starting with a definition. What is a human rights violation? **Validity**
+
+- Social media posts by country. 
+
+- Creating a rubric with specific categories of rights and deducting by category, so the standard is not total violations but categories violated
+
+- Dividing by population size! This is really important. Why?
+
+## Ideas from Monday: Human Rights Measurement
+
+- Starting with a definition. What is a human rights violation? 
+
+- Social media posts from countries. 
+
+- Creating a rubric with specific categories of rights and deducting by category, so the standard is not total violations but categories violated
+
+- Dividing by population size! This is really important. Why? To avoid **systemic bias** against larger countries.
+
+
+## Question of the day
+
+The fundamental problem of causal inference has been described as the inability to observe the **counterfactual** or the **what-if scenario.** 
+
+**In your own words** explain what this means. You may want to use a simple example to illustrate your point. 
+
+*Very important for final exam!!!*
+
+
+## Surveys and Polls
+
+- Sample size in scientific polling (today)
+- Opinion polling: Margins of error, sample size, and sample selection
+
+## Surveys and polls: Sample size
+
+- Sample size: the number of people who are surveyed
+
+## Surveys and polls: Sample size
+
+- Sample size: the number of people who are surveyed
+
+
+## Surveys and polls: Sample size
+
+- Sample size: the number of people who are surveyed
+- The larger the sample size, the more accurate the results but the more expensive the survey
+
+
+## Surveys and polls: Sample size
+
+- Sample size: the number of people who are surveyed
+- The larger the sample size, the more accurate the results but the more expensive the survey
+- The additional value of a larger sample size decreases as the sample size increases
+
+
+
+## Surveys and polls: Sample size
+
+- Sample size: the number of people who are surveyed
+- The larger the sample size, the more accurate the results but the more expensive the survey
+- The additional value of a larger sample size decreases as the sample size increases
+- So, how do we set sample size?
+
+
+## Surveys and polls: Sample size
+
+One method - Statistical power
+
+Note: This method is useful for determining minimum sample size in studies generally, *not just* survey based studies
+
+## Surveys and polls: Sample size
+
+One method - Statistical power
+
+
+        - the probability that a study will correctly reject a false null hypothesis
+        
+## Surveys and polls: Sample size
+
+One method - Statistical power
+
+
+        - the probability that a study will correctly reject a false null hypothesis
+
+        - The likelihood that a study will find a statistically significant result when there is a true effect
+        
+## Surveys and polls: Sample size
+
+One method - Statistical power
+
+
+        - the probability that a study will correctly reject a false null hypothesis
+
+        - The likelihood that a study will find a statistically significant result when there is a true effect
+        
+        - A function of sample size, effect size, and significance level
+        
+## Surveys and polls: Sample size
+
+One method - Statistical power in scientific surveys
+
+
+        - the probability that a study will correctly reject a false null hypothesis
+
+        - The likelihood that a study will find a statistically significant result when there is a true effect
+        
+        - A function of sample size, effect size, and significance level
+        
+        - We have to have an estimate of effect size to start with
+        
+## Surveys and polls: Effect size        
+
+- A large enough sample size can show statistical significance for a very tiny effect size
+
+## Surveys and polls: Effect size        
+
+- A large enough sample size can show statistical significance for a very tiny effect size
+
+- For example, a study might find that a per capita income increase of $1 per day is statistically significant if the sample size is very large
+
+- Context matters here. Why?
+
+
+## Surveys and polls: Effect size        
+
+- A large enough sample size can show statistical significance for a very tiny effect size
+
+- For example, a study might find that a per capita income increase of $1 per day is statistically significant if the sample size is very large
+
+- Context matters here. Why? If we are studying countries with a large population below the absolute poverty mark (\$2 per day) then a \$1 increase is important. If we are studying advanced, industrialized countries it probably is not.
+
+
+
+
+
+## Surveys and polls: Effect size        
+
+
+- A large enough sample size can show statistical significance for a very tiny effect size
+
+- Good power calculations are based on the smallest effect that is scientifically meaningful.
+
+
+
+## Surveys and polls: Sample size
+
+Formula using effect size:
+
+$$n = (\frac{Z_{1 - \alpha/2} + Z_{1 - \beta} }{ES})^2$$
+
+where:
+
+- $n$ = sample size
+- $Z_{1 - \alpha/2}$ = Z score for the desired confidence level
+- $Z_{1 - \beta}$ = Z score for desired power
+- ES = **standardized** effect size
+
+## Survey and polls: Sample size
+
+The **standardized** effect size is:
+
+Formula:
+
+$$ES = \frac{\mu_1 - \mu_0}{\sigma}$$
+
+where:
+
+- $\mu_1$ is the mean of the treatment group
+- $\mu_0$ is the mean of the control group
+- $\sigma$ is the standard deviation of the population
+
+
+
+
+## Surveys and polls: Sample size
+
+The z-scores come from the standard normal distribution and are the same we would use for hypothesis testing
+
+
+
+
+## Surveys and polls: Sample size
+
+So, for a **confidence level** of 95% and a power of 80%:
+
+$$n = (\frac{1.96 + 0.84}{ES})^2$$
+
+
+## Sources and additional reading 
+
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3444174/
+- https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_power/bs704_power_print.html
+- https://www.sciencedirect.com/science/article/pii/S0263224119309108
+
+
