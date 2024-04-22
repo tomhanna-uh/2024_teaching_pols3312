@@ -172,10 +172,20 @@ What is the statistical standard of proof in science? What do we look at beyond 
         - Some behavioral science does consider intent and may be useful in legal settings
 
         
+        
+## Additional readings
+
+- [The Use of Statistics in Legal Proceedings - The Royal Society](https://royalsociety.org/-/media/about-us/programmes/science-and-law/science-and-law-statistics-primer.pdf) - part of the [Royal Society Science and the Law series](https://royalsociety.org/about-us/what-we-do/science-and-law/)
+- [Statistics and the Law](https://uh.primo.exlibrisgroup.com/permalink/01UHO_INST/1m13ils/alma991000852739705701) - Focus on employment discriminatino
+- [Statistics and the Law - Mathematics Magazine](https://www.jstor.org/stable/2690376) - Covers the use of statistics as evidence
 
 
 
 # Science and policy making
+
+## Science and public policy 
+
+- "Because scientific findings can be complex, it can be difficult to decide the best way for society to use the information to improve our quality of life. Scientists who work at the intersection of research and public policy can help politicians and the general public understand research results in order to formulate thoughtful public policy." ^[Nature Education, 2014, https://www.nature.com/scitable/topicpage/science-and-public-policy-13998532/]
 
 ## Aspects of policy making
 
@@ -245,12 +255,14 @@ What is the statistical standard of proof in science? What do we look at beyond 
         - Scientific analysis of the outcome of any policy change should always consider the fundamental probleme of causal inference, the possibility of confounding, the possibility of reverse causation, and the random nature of the world
 
 
-        
-## Additional readings
+## Reminders
 
-- [The Use of Statistics in Legal Proceedings - The Royal Society](https://royalsociety.org/-/media/about-us/programmes/science-and-law/science-and-law-statistics-primer.pdf) - part of the [Royal Society Science and the Law series](https://royalsociety.org/about-us/what-we-do/science-and-law/)
-- [Statistics and the Law](https://uh.primo.exlibrisgroup.com/permalink/01UHO_INST/1m13ils/alma991000852739705701) - Focus on employment discriminatino
-- [Statistics and the Law - Mathematics Magazine](https://www.jstor.org/stable/2690376) - Covers the use of statistics as evidence
+- Wednesday, April 24: 
+
+        - Using MI-LASSO to study populist radical right voting in times of pandemic https://doi.org/10.1177/20531680241228358)
+                - Understanding articles when the methods are well beyond your expertise: examples from MI-LASSO article
+                
+- Monday, April 29: More on surveys and polls, final review
 
 
 
