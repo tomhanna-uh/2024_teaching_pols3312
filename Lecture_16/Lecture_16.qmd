@@ -1,8 +1,8 @@
 ---
 title: |
-    | Lecture 15 - Observational Studies
+    | Lecture 16 - Scientific Surveys 
     | Argument, Data, and Politics - POLS 3312
-date: April 15, 2024
+date: April 17, 2024
 author: "Tom Hanna"
 format: 
         revealjs:
@@ -235,4 +235,16 @@ $$n = (\frac{1.96 + 0.84}{ES})^2$$
 - https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_power/bs704_power_print.html
 - https://www.sciencedirect.com/science/article/pii/S0263224119309108
 
+## Authorship, License, Credits
 
+- Do not submit to Chegg or similar websites
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>   
+        
+        

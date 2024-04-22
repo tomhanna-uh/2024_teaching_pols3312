@@ -1,0 +1,272 @@
+---
+title: |
+    | Lecture 17 - Science, statistics, law and policy
+    | Argument, Data, and Politics - POLS 3312
+date: April 22, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3311, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+
+## Agenda
+
+- Today 
+
+        - Overview of the use of science and statistics in legal settings and policy making
+        - Female combatants, forced recruitment, and civil conflict outcomes https://doi.org/10.1177/2053168018770559
+        
+- Wednesday, April 24: 
+
+        - Using MI-LASSO to study populist radical right voting in times of pandemic https://doi.org/10.1177/20531680241228358)
+                - Understanding articles when the methods are well beyond your expertise: examples from MI-LASSO article
+                
+- Monday, April 29: More on surveys and polls, final review
+
+
+# Science and Law
+
+## Differences between science and law
+
+- Standards of proof
+- Type of truth sought
+
+
+## Standards of proof
+
+- In legal settings there are several standards of proof
+
+        - Reasonable suspicion (allows brief detention, stop and frisk (Terry v. Ohio 1968))
+        
+## Standards of proof
+
+- In legal settings there are several standards of proof
+
+        - Reasonable suspicion (allows brief detention, stop and frisk (Terry v. Ohio 1968))
+        - Probable cause (allows search or arrest, allows issuance of warrants)
+        
+        
+## Standards of proof
+
+- In legal settings there are several standards of proof
+
+        - Reasonable suspicion (allows brief detention, stop and frisk (Terry v. Ohio 1968))
+        - Probable cause (allows search or arrest, allows issuance of warrants)
+        
+        - "In dealing with probable cause, . . . as the very name implies, we deal with probabilities. These are not technical; they are the factual and practical considerations of everyday life on which reasonable and prudent men, not legal technicians, act." Brinegar v. United States, 338 U.S. 160, 175 (1949) quoted in Illinois v. Gates, 462 U.S. 213, 231 (1983)
+        - ""[T]he term 'probable cause,' according to its usual acceptation, means less than evidence which would justify condemnation. . . . It imports a seizure made under circumstances which warrant suspicion." Locke v United States (1813) quoted in Illinois v. Gates, 462 U.S. 213, 231 (1983)
+        
+## Standards of proof
+
+- In legal settings there are several standards of proof
+
+        - Reasonable suspicion (allows brief detention, stop and frisk (Terry v. Ohio 1968))
+        - Probable cause (allows search or arrest, allows issuance of warrants)    
+        - Preponderance of the evidence - more likely true than not (proves liability in most civil cases) 
+
+## Standards of proof
+        
+- In legal settings there are several standards of proof
+
+        - Reasonable suspicion (allows brief detention, stop and frisk (Terry v. Ohio 1968))
+        - Probable cause (allows search or arrest, allows issuance of warrants)    
+        - Preponderance of the evidence - more likely true than not (proves liability in most civil cases) 
+        - Clear and convincing evidence - highly and substantially more likely to be true than not (proves liability in civil cases where more than money is at stake)
+        
+## Standards of proof
+        
+- In legal settings there are several standards of proof
+
+        - Reasonable suspicion (allows brief detention, stop and frisk (Terry v. Ohio 1968))
+        - Probable cause (allows search or arrest, allows issuance of warrants)    
+        - Preponderance of the evidence - more likely true than not (proves liability in most civil cases) 
+        - Clear and convincing evidence - highly and substantially more likely to be true than not (proves liability in civil cases where more than money is at stake)
+        - Beyond a reasonable doubt (proves guilt in criminal cases)
+        
+## Standards of proof: Beyond a reasonable doubt
+
+- There is no other reasonable explanation of the evidence presented at trial
+
+## Standards of proof: Beyond a reasonable doubt
+
+- There is no other reasonable explanation of the evidence presented at trial
+- Virtual certainty
+
+## Standards of proof: Beyond a reasonable doubt
+
+- There is no other reasonable explanation of the evidence presented at trial
+- Virtual certainty
+- Blackstone's formulation: "It is better that ten guilty persons escape than that one innocent suffer"
+
+## Standards of proof: Beyond a reasonable doubt
+
+- There is no other reasonable explanation of the evidence presented at trial
+- Virtual certainty
+- Blackstone's formulation: "It is better that ten guilty persons escape than that one innocent suffer"
+
+What is the statistical standard of proof in science? What do we look at beyond the statistical standard of proof in science? How would this relate to Blackstone's formulation in terms of both evidence presented and statistics?
+
+
+        
+## Standards of proof
+        
+- In legal settings there are several standards of proof
+
+        - Reasonable suspicion (allows brief detention, stop and frisk (Terry v. Ohio 1968))
+        - Probable cause (allows search or arrest, allows issuance of warrants)    
+        - Preponderance of the evidence - more likely true than not (proves liability in most civil cases) 
+        - Clear and convincing evidence - highly and substantially more likely to be true than not (proves liability in civil cases where more than money is at stake)
+        - Beyond a reasonable doubt (proves guilt in criminal cases)
+        
+        
+## Type of truth
+
+- Cause and effect
+
+        - Science concerns itself with determining cause and effect relationships
+        - Intent is not required for cause and effect to be established
+        - Science accepts that we can only achieve approximate truth given the assumptions and data
+        - To isolate causes, science emphasizes using the most  simple (parsimonious) model
+
+## Type of truth
+
+- Cause and effect
+- Liability
+
+        - Civil proceedings focus on liability - responsibility for the harm
+        - Liability is a legal concept that is not the same as cause and effect
+        - Liability may arise from actions, inactions, or actions of those the accused is responsible for
+        - Liability does not require intent
+        - Scientific evidence of cause and effect may be used to establish liability
+
+
+## Type of truth
+
+- Cause and effect
+- Liability
+- Guilt
+
+        - Criminal proceedings focus on determining guilt - did the individual commit all the required elements of the crime
+        - Cause and effect may come into play here
+        - Scientific evidence of cause and effect may be used to establish guilt
+        
+## Type of truth
+
+- Cause and effect
+- Liability
+- Guilt   
+- Intent (mens rea)
+
+        - Intent is a state of mind
+        - Intent is required for many but not all crimes
+        - In some jurisdictions, intent is required for punitive damages in civil cases
+        - Much of science, even behavioral science, does not consider the intent of the actors
+        - Some behavioral science does consider intent and may be useful in legal settings
+
+        
+
+
+
+# Science and policy making
+
+## Aspects of policy making
+
+- Setting goals and standards
+
+        - Goals and standards are based on values
+        - Values are not scientific questions
+        - Values are not subject to proof in the scientific sense
+        
+## Aspects of policy making
+
+- Setting goals and standards
+
+        - Goals and standards are based on values
+        - Values are not scientific questions
+        - Values are not subject to proof in the scientific sense
+        - Policy makers may be concerned with the values of the public, voters, or their own values - surveys may be useful here 
+
+
+## Aspects of policy making
+
+- Setting goals and standards
+- Identifying problems
+
+        - Problems are shortfalls in the values based standards of the decision makers (the public, votes, policy makers, legislators)
+        - Problems are identified through observation and measurement
+        - Accurate measurements of standards may be borrowed from science (i.e. measurements of inequality, poverty, violence)
+
+
+
+## Aspects of policy making
+
+- Setting goals and standards
+- Identifying problems
+- Identifying solutions
+
+        - Given the values based goals and the problems being addressed, science can suggest possible causes of the problems
+        - Understanding underlying causes can help provide solutions
+        - Science can also provide information about possible unintended consequences of proposed solutions
+
+
+
+## Aspects of policy making
+
+- Setting goals and standards
+- Identifying problems
+- Identifying solutions
+- Implementing solutions
+
+        - Implementing solutions may be values based (i.e. how will enforcement be handled, how will the solution be funded, what level of coercive punishment if any may be required)
+        - Behavioral science can help understand how to implement solutions and possible effects of implementation
+
+
+
+
+## Aspects of policy making
+
+- Setting goals and standards
+- Identifying problems
+- Identifying solutions
+- Implementing solutions
+- Measuring outcomes
+
+        - Measurements borrowed from science can be used to measure outcomes
+        - Statistical techniques can be used to analyze outcomes
+        - Scientific attention to causal inference issues can help determine if the solution caused the outcome or if the outcome was due to other factors 
+        - Scientific analysis of the outcome of any policy change should always consider the fundamental probleme of causal inference, the possibility of confounding, the possibility of reverse causation, and the random nature of the world
+
+
+        
+## Additional readings
+
+- [The Use of Statistics in Legal Proceedings - The Royal Society](https://royalsociety.org/-/media/about-us/programmes/science-and-law/science-and-law-statistics-primer.pdf) - part of the [Royal Society Science and the Law series](https://royalsociety.org/about-us/what-we-do/science-and-law/)
+- [Statistics and the Law](https://uh.primo.exlibrisgroup.com/permalink/01UHO_INST/1m13ils/alma991000852739705701) - Focus on employment discriminatino
+- [Statistics and the Law - Mathematics Magazine](https://www.jstor.org/stable/2690376) - Covers the use of statistics as evidence
+
+
+
+
+## Authorship, License, Credits
+
+- Do not submit to Chegg or similar websites
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>   
+        
+        
+
+
