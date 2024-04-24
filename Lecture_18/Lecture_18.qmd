@@ -1,0 +1,191 @@
+---
+title: |
+    | Lecture 18 - Articles with advanced analysis methods
+    | Argument, Data, and Politics - POLS 3312
+date: April 24, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3311, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+```{r setup, include=FALSE}
+library(stargazer)
+library(tidyverse)
+library(sjPlot)
+
+```
+
+
+
+## Agenda
+
+- Today 
+
+        - Understanding articles when the methods are well beyond your expertise: examples from MI-LASSO article
+        - Using MI-LASSO to study populist radical right voting in times of pandemic https://doi.org/10.1177/20531680241228358
+
+                
+- Monday, April 29: More on surveys and polls, final review
+
+## How to approach articles with advanced methods
+
+- First make sure you understand the narrative portions (abstract, introduction, theory) well
+- Then, focus on the methods, results and discussion sections
+
+## Reading the methods section          
+
+- Look for explanations of the methods used
+- You do not need to understand every detail of the math
+
+## OLS versus more advanced methods
+
+- Ordinary Least Squares (OLS) regression gives an equation for predicting an outcome variable based on one or more predictor variables
+
+$$Y = \alpha + \beta_1X_1 + \beta_2X_2 + \ldots + \beta_nX_n + \epsilon$$
+
+## OLS versus more advanced methods
+
+- Most advanced methods focus on probabilities or likelihoods, not just point estimates
+
+$$P(Y=1) = \frac{1}{1 + e^{-(\alpha + \beta_1X_1 + \beta_2X_2 + \ldots + \beta_nX_n)}}$$
+
+Where P(Y = 1) is the probability of the outcome variable being 1
+
+        - other methods may focus on other probabilities than just the probability of the outcome variable being 1
+        - other terms may be used such as likelihood, log-likelihood, odds, log-odds, etc. These are all closely related to probabilities
+        - What is important to understand is that these methods are focused on probabilities, not just point estimates
+
+## OLS versus more advanced methods
+
+$$Y = \alpha + \beta_1X_1 + \beta_2X_2 + \ldots + \beta_nX_n + \epsilon$$
+
+$$P(Y=1) = \frac{1}{1 + e^{-(\alpha + \beta_1X_1 + \beta_2X_2 + \ldots + \beta_nX_n)}}$$
+
+
+
+
+## MI-LASSO
+
+- MI-LASSO is a method for estimating the effects of multiple variables on an outcome variable when there are missing data
+- It is a combination of multiple imputation (MI) and LASSO regression
+- LASSO is a method for selecting variables that are most important in predicting an outcome variable based on the size of their **coefficients**
+
+
+## What's a coefficient?
+
+- In OLS regression, the **coefficients** are the numbers that multiply the predictor variables to predict the outcome variable
+- In other methods, the **coefficients** are the numbers that multiply the predictor variables to predict the probability of the outcome variable being 1
+- In machine learning (ML) models, coefficients are often called **weights**
+
+
+
+## MI-LASSO
+
+- LASSO model           
+
+$$\min_{\beta} \left\{ \sum_{i=1}^n (y_i - \alpha - \sum_{j=1}^p x_{ij}\beta_j)^2 + \lambda \sum_{j=1}^p |\beta_j| \right\}$$
+- OLS Model
+
+$$Y = \alpha + \beta_1X_1 + \beta_2X_2 + \ldots + \beta_nX_n + \epsilon$$
+
+The **coefficients** or **weights** are the $\beta$ values
+
+
+
+## The catch
+
+With OLS, you can fairly easily turn a statistical output into an equation that predicts the outcome variable based on the predictor variables
+
+$$Y = \alpha + \beta_1X_1 \epsilon$$
+The **coefficient** reported in the table is the $\beta$ value
+The **Constant** reported in the table is the $\alpha$ value
+The random element is represented by $\epsilon$ and is not used
+
+So...
+
+## The catch
+
+Example statistical output 
+
+```{r echo=FALSE}
+library(stargazer)
+cars <- mtcars
+model <- lm(mpg ~ wt, data = cars)
+stargazer(model, type = "text")
+
+
+```
+
+## The catch
+
+- with more advanced techniques, the output is not as easy to interpret
+- The **coefficients** are not as easy to turn into an equation
+- in some cases a relatively simple link function can be used to turn the **coefficients** into probabilities
+- In other cases, the **coefficients** are not easily interpretable or may not be reported
+
+## The catch 
+
+Example statistical output for P(mpg > 20)
+
+```{r echo=FALSE}
+
+cars <- mtcars
+model <- glm(mpg > 20 ~ wt, data = cars, family = binomial)
+stargazer(model, type = "text")
+
+```
+
+
+## Solutions
+
+- Look for reports of **predicted probabilities** and **marginal effects**
+- Especially look for graphics of predicted probabilities and marginal effects
+
+## Solutions
+
+Predicted probabilities for P(mpg > 20) 
+
+```{r echo=FALSE}
+
+cars <- mtcars
+cars$GreaterThan20MPG <- ifelse(cars$mpg > 20, 1, 0)
+cars$GreaterThan20MPG <- as.numeric(cars$GreaterThan20MPG)
+
+
+
+model <- glm(GreaterThan20MPG ~ wt, data = cars, family = binomial)
+
+
+#Plot the predicted probabilities without using sjp.glmm
+
+cars$PredictedProb <- predict(model, type = "response")
+ggplot(cars, aes(x = wt, y = PredictedProb)) + geom_point() + geom_smooth(method = "glm", method.args = list(family = "binomial")) + labs(title = "Predicted Probability of MPG > 20", x = "Weight", y = "Predicted Probability")
+
+
+```
+
+
+## Authorship, License, Credits
+
+- Do not submit to Chegg or similar websites
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>   
+        
+        
+
+
+
