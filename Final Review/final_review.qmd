@@ -52,8 +52,8 @@ library(tidyverse)
 - What you need/can use: 
         
         - You will need pens or pencils
-        - You can bring either all your notecards from class or one 8.5 x 11 handwritten page of notes
-        - No devices except a calculator (likely not needed)
+        - You can bring either all your notecards from class or *two* 8.5 x 11 handwritten pages of notes
+        - No devices except a calculator 
         
 - Everything else put away, including phones, laptops, tablets
 - You do not need a blue book or scantron, paper will be provided
@@ -212,16 +212,24 @@ All topics from the Midterm plus
   <tr>
     <td class="tg-0pky">X</td>
     <td class="tg-0pky" colspan="2">$\beta$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2">(Standard Error of X)</td>
+  </tr>
   <tr>
     <td class="tg-0pky">Constant</td>
     <td class="tg-0pky" colspan="2">$\alpha$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2">(Standard Error of Constant)</td>
   </tr>
   <tr>
     <td class="tg-0pky" colspan="3">Other stuff (Notes, R-squared, model fit)</td>
   </tr>
 </tbody>
 </table>
-
 
 
 ## Calculation Practice - Linear equations
@@ -250,16 +258,30 @@ All topics from the Midterm plus
     <td class="tg-0pky" colspan="2"> $\beta_1$</td>
   </tr>
     <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2">(Standard Error of $X_1$)</td>
+  </tr>
+    <tr>
     <td class="tg-0pky">$X_2$</td>
     <td class="tg-0pky" colspan="2">$\beta_2$</td>
   </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2">(Standard Error of $X_2$)</td>
    <tr>
     <td class="tg-0pky">$X_3$</td>
     <td class="tg-0pky" colspan="2">$\beta_3$</td>
   </tr>
   <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2">(Standard Error of $X_3$)</td>
+  <tr>
     <td class="tg-0pky">Constant</td>
     <td class="tg-0pky" colspan="2">$\alpha$</td>
+  </tr>
+ <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2">(Standard Error of Constant)</td>
   </tr>
   <tr>
     <td class="tg-0pky" colspan="3">Other stuff (Notes, R-squared, model fit)</td>
