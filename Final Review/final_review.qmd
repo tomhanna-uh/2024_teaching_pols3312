@@ -1,0 +1,623 @@
+---
+title: |
+    | Final Review
+    | Argument, Data, and Politics: POLS 3312
+date: April 29, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+```{r setup, include=FALSE}
+library(stargazer)
+library(tidyverse)
+
+```
+
+
+
+# Final Review
+
+## Final Exam Schedule
+
+- 1:00 PM to 2:30 PM section: Friday, May 3, 12-2 PM in the regular classroom
+
+- 2:30 PM to 4 PM section: Monday, May 6, 2-4 PM in the regular classroom
+
+- For those using the DART Center, you may take the exam during any available time slot on the day of your section
+
+## Format and procedures
+
+- The University [Academic Honesty Policy](https://www.uh.edu/provost/policies-resources/honesty/) applies including student's responsibility to report suspected violations to the instructor
+
+        - "Students shall have the responsibility of reporting incidents of alleged academic dishonesty to the instructor of record involved, or to the appropriate authority if the alleged act is not associated with a specific class."  
+
+## Format and procedures
+
+- The final exam is comprehensive, covering the entire semester (Review the Midterm. Review Lecture 9. **STUDY** your missed Midterm questions. )
+- The final exam will be a mix of multiple choice, short answer, and **short** essay questions. About 20% will be relatively simple statistics calculations.
+- There will be some questions with sample readings from scientific articles asking you to find specific information in the article (e.g. research question, dependent variable, independent variable, results)
+
+## Format and procedures
+
+
+- What you need/can use: 
+        
+        - You will need pens or pencils
+        - You can bring either all your notecards from class or one 8.5 x 11 handwritten page of notes
+        - No devices except a calculator (likely not needed)
+        
+- Everything else put away, including phones, laptops, tablets
+- You do not need a blue book or scantron, paper will be provided
+
+## Format and procedures
+
+
+- No talking, no looking at other people's work, no sharing notes
+- You may be asked to show your notes/notecards before, during, or after the exam 
+- Arrive planning to stay until you are finished
+- You may not leave the room during the exam
+- No one may start the exam after the first person finishes and leaves
+
+
+
+# Final Exam Topics
+
+## Important Note
+
+- This review focuses on topics and questions.
+- Tip: You should try to answer the questions first, then refer to the lecture to check your answers. 
+- Tip: Where the review says to "give an example," in studying it would be useful to try to think of an example of your own and make sure it matches any example given in class. 
+- The answers and longer explanation are from the lectures (and *may* be found in the text).
+- The review is organized in order according to the lectures.
+
+
+## General Topics (page 1)
+
+All topics from the Midterm plus
+
+- Reading scientific articles (Lecture 4, Lecture 18, all semester)
+
+- Interpreting an OLS output
+
+        - Deriving a linear equation for the dependent (Y) variable from an OLS output / journal table
+        - Significance level
+        - Direction of the relationship
+        - R-squared value (what does it mean in simple terms?)
+        
+        
+        
+- Experiments (Lecture 9/10)
+- Natural Experiments (Lecture 11)
+
+## General Topics (page 2)
+
+- Internal and external validity (Lecture 9/10)
+- Variable Types (Lecture 13/14)
+- Types of Observational Studies (Lecture 13/14)
+- Sampling and Case Selection (Lecture 13/14)
+- Measurement (Lecture 15)
+- Surveys (Sample Size and Statistical Power) (Lecture 16)
+
+## Calculations 
+
+- Mean, median, mode (Lecture 2)
+- Find variance given standard deviation and vice versa (Lecture 2)
+- Find percentage of a normal distribution given standard deviation (Lecture 3) (68-95-99 rule)
+- Deriving a linear equation for the dependent (Y) variable from a simple OLS output
+- Find values of Y given X using the linear equation derived above
+
+## Calculations 
+
+- Bonus: Derive a linear equation for a multiple regression output (OLS with more than one X variable) and compute value for Y given  values for main explanatory (X) variables and mean values for other X variables
+- Bonus: others possible including sample size using statistical power, sample size given margin of error
+- More practice calculations will be posted over the next few days with answer keys.
+
+## Calculation Practice - Mean
+
+- Calculate the mean of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+- Calculate the mean of the following data set: 1, 1, 1, 1, 1, 1, 1, 1, 1, 10
+
+## Calculation Practice - Mean (Answers)
+
+- Calculate the mean of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 = 55/10 = 5.5
+- Calculate the mean of the following data set: 1, 1, 1, 1, 1, 1, 1, 1, 1, 10 = 29/10 = 2.9
+
+## Calculation Practice - Median
+
+- Calculate the median of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9
+- Calculate the median of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+- Calculate the median of the following data set: 1, 1, 1, 1, 1, 1, 1, 1, 1, 10
+- Calculate the median of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+
+## Calculation Practice - Median (Answers)
+
+- Calculate the median of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9 = 5
+- Calculate the median of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 = 5.5
+- Calculate the median of the following data set: 1, 1, 1, 1, 1, 1, 1, 1, 10 = 1
+- Calculate the median of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 = 6
+
+## Calculation Practice - Mode
+
+- Find the Mode of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9
+- Find the Mode of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+- Find the Mode of the following data set: 1, 1, 1, 1, 1, 1, 1, 1, 1, 10
+- Find the Mode of the following data set: 1,2,2,3,3,3,4,4,4,4,5,5,5,6,6,7
+
+## Calculation Practice - Mode (Answers)
+
+- Find the Mode of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9 = No mode
+- Find the Mode of the following data set: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 = No mode
+- Find the Mode of the following data set: 1, 1, 1, 1, 1, 1, 1, 1, 1, 10 = 1
+- Find the Mode of the following data set: 1,2,2,3,3,3,4,4,4,4,5,5,5,6,6,7 = 4
+
+## Calculation Practice - 68-95-99 Rule
+
+- What percentage of the data falls within 1 standard deviation of the mean in a normal distribution?
+
+- Given a mean of 100 and a standard deviation of 10, 68/% of the data falls between what two values?
+
+- Given a mean of 100 and a standard deviation of 10, 95% of the data falls between what two values?
+
+- Given a mean of 100 and a standard deviation of 10, 99% of the data falls between what two values?
+
+## Calculation Practice - 68-95-99 Rule (Answers)
+
+- What percentage of the data falls within 1 standard deviation of the mean in a normal distribution? 68%
+- Given a mean of 100 and a standard deviation of 10, 68/% of the data falls between what two values? 90 and 110
+- Given a mean of 100 and a standard deviation of 10, 95% of the data falls between what two values? 80 and 120
+- Given a mean of 100 and a standard deviation of 10, 99% of the data falls between what two values? 70 and 130
+
+## Calculation Practice - 68-95-99 Rule 
+
+- Given a mean of 50 and a standard deviation of 2.5, 68% of the data falls between what two values?
+- Given a mean of 50 and a standard deviation of 2.5, 95% of the data falls between what two values?
+- Given a mean of 50 and a standard deviation of 2.5, 99% of the data falls between what two values?
+
+## Calculation Practice - 68-95-99 Rule (Answers)
+
+- Given a mean of 50 and a standard deviation of 2.5, 68% of the data falls between what two values? 47.5 and 52.5
+- Given a mean of 50 and a standard deviation of 2.5, 95% of the data falls between what two values? 45 and 55
+- Given a mean of 50 and a standard deviation of 2.5, 99% of the data falls between what two values? 42.5 and 57.5               
+
+## Calculation practice - Linear equations
+
+Variable means from data set
+
+```{r}
+cars_data <- mtcars
+# display means of columns 1,2,3,4, 6,10,11
+# label displays as "mean of mpg = " and drop the [1] at the beginning of the line
+
+sapply(cars_data[, c(1,2,3,4,6,10,11)], mean, simplify = "array", USE.NAMES = TRUE)
+
+```
+
+## Calculation practice - Linear equations
+
+Linear model with one X variable
+
+```{r}
+# create a linear model with mpg as the dependent variable and hp as the independent variable
+
+model1 <- lm(mpg ~ hp, data = cars_data)
+stargazer(model1, type = "text")
+
+
+```
+
+
+## Calculation practice - Linear equations
+
+Linear equation for simple model with one X variable
+
+$$$Y = \alpha + \beta_1X$$
+
+## Calculation practice - Linear equations
+
+Linear equation for simple model with one X variable
+
+$$Y = \alpha + \beta_1X$$
+
+$$ mpg = 30.0989 - 0.068*hp $$
+
+## Calculation practice - Linear equations
+
+Linear equation for simple model with one X variable
+
+$$Y = \alpha + \beta_1X$$
+
+$$ mpg = 30.0989 - 0.068*hp $$
+Find the value for mpg when hp = 110
+
+$$ mpg = 30.0989 - 0.068*110 $$
+$$ mpg = 30.0989 - 7.48 $$
+$$ mpg = 22.6189 $$
+
+
+
+
+## Calculation practice - Linear equations
+
+Linear equation for simple model with one X variable
+
+```{r}
+model2 <- lm(mpg ~ wt, data = cars_data)
+stargazer(model2, type = "text")
+
+
+
+```
+
+## Calculation practice - Linear equations
+
+Linear equation for simple model with one X variable
+
+$$Y = \alpha + \beta_1X$$
+
+## Calculation practice - Linear equations
+
+Linear equation for simple model with one X variable
+
+$$Y = \alpha + \beta_1X$$
+
+$$ mpg = 37.2851 - 5.344*wt $$
+
+## Calculation practice - Linear equations
+
+Linear equation with three X variables
+
+```{r}
+model3 <- lm(mpg ~ hp + wt + cyl, data = cars_data)
+stargazer(model3, type = "text")
+
+
+```
+
+## Calculation practice - Linear equations
+
+Use a value of zero for weight and cylinders to calculate the predicted value of mpg
+
+$$Y = \alpha + \beta_1X_1 + \beta_2X_2 + \beta_3X_3$$
+
+## Calculation practice - Linear equations
+
+Use a value of zero for weight and cylinders to calculate the predicted value of mpg
+
+$$Y = \alpha + \beta_1X_1 + \beta_2X_2 + \beta_3X_3$$
+$$mpg = 39.6863 - 0.018*hp - 3.167*wt - 0.942*cyl$$
+
+## Calculation practice - Linear equations
+
+Use a value of zero for weight and cylinders to calculate the predicted value of mpg
+
+$$Y = \alpha + \beta_1X_1 + \beta_2X_2 + \beta_3X_3$$
+$$mpg = 39.6863 - 0.018*hp - 3.67*0 - 0.942*0$$
+$$mpg = 39.6863 - 0.018*hp$$
+
+## Calculation practice - Linear equations
+
+Use the mean values for weight and cylinders to calculate the predicted value of mpg for a car with 100 hp
+
+$$Y = \alpha + \beta_1X_1 + \beta_2X_2 + \beta_3X_3$$
+<p style="font-size: x-large">$$mpg = 39.6863 - 0.018*100 - 3.167*3.21725 - 0.942*6.1875$$</p>
+
+MPG = 37.883
+
+
+
+
+
+
+
+
+
+
+## Topics
+
+## Experiments (Lecture 9/10)
+
+- Why do we do experiments? (What problem does it at least partially solve? How does it fit into causal inference aka establishing valid cause and effect relationships?)
+- What is an experiment?
+- What are the types of experiment? Give an example of each?
+- What makes a good experiment? Define the two elements
+
+## Experiments (Lecture 9/10)
+
+- Why do we split subjects into two groups? What are the groups called? Why do we randomize when splitting into groups?
+- Know the terminology: treatment, control, random assignment, manipulation, internal validity, external validity, vignette, selection, sample, population, generalizability
+- Look at the recap of experiments in Lecture 11
+
+
+
+## Natural Experiments (Lecture 11 and Loma Prieta Earthquake article)
+
+- What is a natural experiment?
+- what role does the event play in a natural experiment? (It does several things)
+- How are the treatment and control groups assigned? The event assigns them in what manner that mimics an important element of a real experiment. 
+
+
+## Internal and External Validity (Lecture 9/10)
+
+- What is internal validity? Give an example of a threat to internal validity.
+- What is external validity? Give an example of a threat to external validity.
+
+## Variable Types (Lecture 13)
+
+- What are the two main types of variables? Give an example of each.
+- What are the types of categorical variables? Give an example of each.
+- What is a continuous variable? Give an example.
+- What is a discrete variable? Give an example.
+
+## Types of Observational Studies (Lecture 13/14)
+
+- How are observational studies typically categorized by size? (Three categories) Give an example of each.
+- What are the main uses of case studies?
+- What are two types of case study (by size)?
+- How can a single country (city, state, etc.) case study be useful for more than theory development? (For controlled comparison and generalizability.)
+
+## Types of Observational Studies (Lecture 13/14)
+
+- Based on the normal distribution for a study with one X variable, what would be the absolute minimum sample size dividing **small-n** and **large-n** studies?
+- What other factors would help determing the minimum sample size for a study to be **large-n**?
+
+
+
+## Types of Observational Studies (Lecture 13/14)
+
+- What are the four types of observational studies discussed? What is the unit of observation for each if the study is being done at the country level?
+- What is the difference between panel data and cross-sectional data?
+- What is the difference between panel data and  time series data?
+- If we did a study of the students in this class for the next 10 years measuring academic and professional progress, what type of study would that be?
+
+## Sampling and Case Selection (Lecture 13/14)
+
+- What is the difference between a sample and a population?
+- What is the difference between a sample and a case?
+- Case selection is picking what?
+- Sample selection is picking what?
+- What are the two key elements in case selection?
+- Why is variability in the independent variables so important?
+
+## Sampling and Case Selection (Lecture 13/14)
+
+- What is **bias** in a statistical sense?
+- What is **sampling bias**?
+- What is **selection bias**?
+- What is **non-response bias**?
+
+
+## Sampling and Case Selection (Lecture 13/14)
+
+- What are the stages of sampling?
+- What are the two main types of sampling?
+- What are the eight subtypes of sampling? Describe and define. Be prepared to identify them from examples.
+
+## Measurement (Lecture 15)
+
+- Why does good measurement matter?
+- What are the two requirements of a good measure? It must be _____ and ____. Define them amd give an example of each. 
+- What is **conceptual clarity** and why is it important? 
+- What are the three types of measurement error? What problem does each cause? Rank them in order of importance.
+- How can we fix the problem caused by random measurement error?
+
+## Surveys (Lecture 16)
+
+- What is sample size in a survey?
+- What is statistical power?
+- What is the relationship between sample size and statistical power?
+- What is effect size?
+
+## Surveys (Lecture 16)
+
+This applies to all studies, not just surveys.
+
+- The relationship between effect size and statistical power tells us something about the minimum sample size, but also tells us something important about the maximum sample size? What is that? 
+- In a good statistical power analysis, we should base our sample size on the on the ______  ______ that is scientifically meaningful. That is, we should have the smallest sample size that will detect this with the desired power and confidence level.
+
+
+
+
+## Midterm Review
+
+## General
+
+- What is the fundamental problem of causal inference?
+- Causes: causal variables, X variables, independent variables (IV)^[Not testable, but to help you avoid confusion: This is usually the case, especially in this course. In reading journal articles, IV may also be used in studies using "instrumental variable" analysis to indicate the instrumental variable], treatment variables
+- Effects: dependent variables (DV), Y variables, outcome variables
+- Critical p-value is .05 unless otherwise stated
+
+
+## Cause and Effect (Lect 1)
+
+- What is a cause?
+- Causes are complicated: How?
+- Necessary and sufficient causes; conditions
+- Mediating and moderating variables
+- The stochastic or random factor
+- Reverse causation 
+
+## Cause and effect
+
+What is the fundamental problem of causal inference?
+
+## How do we approach the problem of causal inference?
+
+- The gold standard: experimental **design** 
+
+        - random assignment
+        - manipulation (treatment)
+        - control group
+        
+- Observational studies: model oriented **analysis**
+
+- Statistical approach to hypothesis testing
+
+## Basic data and statistics (Lect 2)
+
+- What do we need to know about the data?
+
+- Central tendency: mean, median and mode
+
+        - why do we use them?
+        - what do they tell us?
+        - what are their strengths, weaknesses, and specific uses?
+        - Be prepared to compute a mean, find a median, and find a mode from a set of numbers
+        
+- Dispersion: range, variance, standard deviation
+
+        - why do we use them?
+        - what do they tell us?
+        - In figuring variance, why do we square the differences?
+        - In figuring variance, why do we divide by sample size (either n or n-1)?
+        - One measure of dispersion is the square root of another measure. Which one? Why do we take the square root? Be prepared to find one from the other by squaring or taking the square root
+        
+## Probability and frequency distributions (Lect 3)
+
+- Probability
+
+        - What is probability?
+        - What is the range of probability?
+        - What does probability of 0 mean? What does probability of 1 mean? What does a negative probability mean ("trick" question)?
+        - How do we find probability?
+        
+- Assumptions about data/frequency distributions
+
+        - Why do we need assumptions?
+        - Independent, identically distributed data (iid)
+        - What is independence (statistically)? How does it affect our beliefs about cause and effect?
+        - What is the Data Generating Process? (DGP)
+        
+## Frequency distributions
+
+- Uniform distribution
+
+        - Define a uniform distribution
+        - Recognize a uniform distribution by shape
+        
+- Binomial distribution
+
+        - What is it?
+        
+- Poisson distribution
+
+        - What is it?
+        - What does it tell us about always assuming a normal distribution?
+
+- Normal distribution
+
+        - Define a normal distribution
+        - Recognize a normal distribution by shape
+        - What is the mean, median, and mode of a perfect normal distribution?
+        - why is the normal distribution so important to statistics? (Hint: We do NOT, DO NOT, DO NOT believe that all things are normally distributed.) (Hint 2: ___ ___ theorem and sample size)
+        - What do we know about probabilities and the normal distribution?
+        
+
+## Reading a scientific article (Lect 4)
+
+- What are the top 5 things we are looking for?
+- In looking at the research question, what is the essential element? Where can we usually find the research question?
+- If we want to know the current state of knowledge what area of the paper will help us?
+- What are three essential elements of a good theory section? (Two types of variables and a testable ____)
+
+## Reading a scientific article (Lect 4)
+
+- What questions should you ask about the data? About the research design?
+- What do we expect to find in the results section? The author should explain how the results apply to what?
+- What are important points from the dicussion/conclusion section?
+
+
+## Hypothesis Testing (Lect 5)
+
+- What is a hypothesis?
+- What is falsifiablity?
+- What is a null hypothesis?
+- What is an alternative hypothesis? Why do we call the research hypothesis "alternative"?
+- What do statistical tests show? What hypothesis do they help us to retain or reject?
+
+## Hypothesis Testing (Lect 5)
+
+- If we reject the null hypothesis, what can we say about the alternative hypothesis?
+
+## Hypothesis Testing (Lect 5)
+
+- How do we test hypotheses about a population when we only have a sample?
+
+        - Law of Large Numbers
+        - Central Limit Theorem
+        - Standard error
+        
+## Hypothesis Testing (Lect 6)
+
+- Common to all tests
+
+        - What is a p-value? Significance level? Confidence level?
+        - What is the critical value?
+
+- Scores
+
+        - What score is directly tied to the normal distribution?
+        - What score is similar to the normal distribution, but more conservative with more room in the "tails?" This is the score we use for small sample sizes.
+        - At what sample size does this score become "close enough" to normal to apply the normal distribution?
+        - What hypotheses test is used to test the independence of categorical variables?
+        
+## Hypothesis Testing (Lect 6)
+        
+- Standard error
+
+        - What does the standard error measure?
+        - The standard error relates the sample mean to what?
+        - The standard error is a special case of what important measure of dispersion that ties directly to probabilities in the normal distribution?
+        
+- What is the Z-score in terms of standard errors?
+
+## Lect 7
+
+- What kind of questions does science seek to answer?
+- Is science concerned (directly) with explaining the world as it is or with making arguments about an ideal world?
+- What kind of questions can science not answer (though it may contribute to the answer)?
+- Why is it best to ask scientific questions in as neutral a way as possible?
+- A scientific research question needs at least one thing. What is it?
+
+
+## Correlation and Ordinary Least Squares Regression (Lect 8)
+
+- What is correlation?
+
+        - What does it measure?
+        - What kind of relationship can it measure? What kind can it not measure?
+        - What is the range of numbers?
+        - What does -1 represent? what does 0 represent? What does 1 represent?
+        - Where does correlation fit in assessing cause and effect? Does it prove specific cause and effect? Does it provide useful information about possible cause and effect?
+        - Does a correlation of 0 mean there is no relationship between the variables?
+
+## Correlation and Ordinary Least Squares Regression (Lect 8)
+        
+- Ordinary Least Squares regression
+
+        - Regression is intended to find what kind of equation?
+        - This is an equation that draws what geometric figure?
+        - Regression is intended to find the equation that minimizes what (generally)?
+        - OLS regression does this by minimizing what (specifically)?
+        - What is the difference between correlation and regression?
+        - Does a well fit regression equation prove cause and effect? (Hint: we had an article about this)
+
+
+
+## Authorship, License, Credits
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>
