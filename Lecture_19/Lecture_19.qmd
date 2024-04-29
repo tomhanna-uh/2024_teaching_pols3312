@@ -1,0 +1,125 @@
+---
+title: |
+    | Lecture 19 - Opinion Polls
+    | Argument, Data, and Politics - POLS 3312
+date: April 29, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3311, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+## Opinion Polls
+
+- What are they?
+- Sample selection
+- Sample size
+
+
+## What are Opinion Polls?
+
+- A survey of public opinion from a particular sample of the population
+- Used to gauge public opinion on a variety of topics including
+
+        - Political candidates
+        - Public policy
+        - Consumer products
+        - Social issues
+        
+## Sample Selection
+
+- Random sampling is the best way to ensure a representative sample
+- Random digit dialing
+- Online surveys
+- In-person interviews
+- Mail surveys
+
+## Sample Selection
+
+Public opinion polls should use **probability sampling** 
+
+- Random sampling
+- Stratified random sampling
+- Cluster sampling
+- Systematic sampling
+
+## Sample selection 
+
+Example: Gallup uses "directory-assisted *random-digit-dial* (RDD) telephone samples using a proportionate, *stratified sampling* design" to conttact landline and cell phone users.^["How does Gallup polling work?", https://news.gallup.com/poll/101872/how-does-gallup-polling-work.aspx . Accessed April 28, 2024]
+
+## Sample selection issues
+
+- Sampling bias: polls of likely voters systematically exclude new voters, polls of landline phones systematically exclude GenX, Millenial, and GenZ voters
+- Non-response bias: people who respond to polls may not be representative of the population
+
+
+## Sample Size
+
+![Margin of Error Formula](margin_formula.webp){width=50%}^[Qualtrics Margin of error guide & calculator, https://www.qualtrics.com/experience-management/research/margin-of-error/#_eswtswt4kryk]
+- Where: 
+
+        - *p* is the sample proportion
+        - *n* is the sample size
+        - *z* is the z-score for the desired confidence level
+        
+        
+## Sample Size
+
+- This works for things with an obvious sample proportion, like percent of respondents who support a candidate. 
+- It is an *ex post* calculation, not a way to determine sample size before the poll is conducted.
+
+## Sample Size
+
+Margin of error *ex ante* calculation:^[Niles, Robert. "Survey Sample Sizes and Margin of Error". https://www.robertniles.com/stats/margin.shtml, Accessed April 28, 2024]
+
+$margin \;  of \;  error = \frac{1}{\sqrt{n}}$
+
+- Where *n* is the sample size
+
+
+## Sample Size
+
+Margin of error *ex ante* calculation:^[Niles, Robert. "Survey Sample Sizes and Margin of Error". https://www.robertniles.com/stats/margin.shtml, Accessed April 28, 2024]
+
+$margin \;  of \;  error = \frac{1}{\sqrt{n}}$
+
+- Where *n* is the sample size
+
+
+## Sample Size
+
+Neither method is dependent on population size!
+
+
+## Example
+
+Gallup Daily Tracking Polls: "1,000 national adults with a margin of error of ±4 percentage points."^["How does Gallup polling work?", https://news.gallup.com/poll/101872/how-does-gallup-polling-work.aspx . Accessed April 28, 2024]
+
+
+
+
+
+
+## Authorship, License, Credits
+
+- Do not submit to Chegg or similar websites
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>   
+        
+        
+
+
+

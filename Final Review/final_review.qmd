@@ -188,6 +188,86 @@ All topics from the Midterm plus
 - Given a mean of 50 and a standard deviation of 2.5, 95% of the data falls between what two values? 45 and 55
 - Given a mean of 50 and a standard deviation of 2.5, 99% of the data falls between what two values? 42.5 and 57.5               
 
+## Calculation Practice - Linear equations
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky" rowspan="2"></th>
+    <th class="tg-0pky" colspan="2">Dependent Variable</th>
+  </tr>
+  <tr>
+    <th class="tg-0pky" colspan="2">Y</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">X</td>
+    <td class="tg-0pky" colspan="2">$\beta$</td>
+  <tr>
+    <td class="tg-0pky">Constant</td>
+    <td class="tg-0pky" colspan="2">$\alpha$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="3">Other stuff (Notes, R-squared, model fit)</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+## Calculation Practice - Linear equations
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky" rowspan="2"></th>
+    <th class="tg-0pky" colspan="2">Dependent Variable</th>
+  </tr>
+  <tr>
+    <th class="tg-0pky" colspan="2">Y</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">X_1</td>
+    <td class="tg-0pky" colspan="2"> $\beta_1$</td>
+  </tr>
+    <tr>
+    <td class="tg-0pky">$X_2$</td>
+    <td class="tg-0pky" colspan="2">$\beta_2$</td>
+  </tr>
+   <tr>
+    <td class="tg-0pky">$X_3$</td>
+    <td class="tg-0pky" colspan="2">$\beta_3$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Constant</td>
+    <td class="tg-0pky" colspan="2">$\alpha$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="3">Other stuff (Notes, R-squared, model fit)</td>
+  </tr>
+</tbody>
+</table>
+
+
 ## Calculation practice - Linear equations
 
 Variable means from data set
