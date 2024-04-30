@@ -1,0 +1,271 @@
+---
+title: |
+    | Practice Problem Set 1
+    | Argument, Data, and Politics: POLS 3312
+date: April 29, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+```{r }
+library(tidyverse)
+library(stargazer)
+library(knitr)
+```
+
+
+## Instructions
+
+- This is strictly for your practice for the final exam, not for credit.
+- This is set up as a slideshow you can view in your browser. Use the left and right arrows on your keyboard to navigate. (From a phone, this may vary by type of phone.)
+- The answers are included and in some cases step by step instructions.
+- I will post at least one more practice set Wednesday or Thursday.
+- Please do not post this to Chegg, Coursehero, or similar commercial websites.
+
+## Problem 1 - 68-95-99 rule
+
+- Given a mean of 27 and a standard deviation of 3, 68% of the data fall within what range?
+
+- Given a mean of 27 and a standard deviation of 3, 95% of the data fall within what range?
+
+- Given a mean of 27 and a standard deviation of 3, 99.7% of the data fall within what range?
+
+
+## Problem 1 - Solution
+
+- 68% of the data fall within one standard deviation of the mean. So the range is 24 to 30. (27-3 to 27+3)
+
+- 95% of the data fall within two standard deviations of the mean. So the range is 21 to 33. (27-6 to 27+6)
+
+- 99.7% of the data fall within three standard deviations of the mean. So the range is 18 to 36. (27-9 to 27+9)
+
+## Problem 2 - 68-95-99 rule
+
+- Given a mean of 1315 and a standard deviation of 10, 68% of the data fall within what range?
+
+- Given a mean of 1315 and a standard deviation of 10, 95% of the data fall within what range?
+
+- Given a mean of 1315 and a standard deviation of 10, 99.7% of the data fall within what range?
+
+## Problem 2 - Solution
+
+- 68% of the data fall within one standard deviation of the mean. So the range is 1305 to 1325. (1315-10 to 1315+10)
+
+- 95% of the data fall within two standard deviations of the mean. So the range is 1295 to 1335. (1315-20 to 1315+20)
+
+- 99.7% of the data fall within three standard deviations of the mean. So the range is 1285 to 1345. (1315-30 to 1315+30)
+
+## Problem 3 - 68-95-99 rule
+
+- Given a mean of 3 and a standard deviation of .03, 68% of the data fall within what range?
+
+- Given a mean of 3 and a standard deviation of .03, 95% of the data fall within what range?
+
+- Given a mean of 3 and a standard deviation of .03, 99.7% of the data fall within what range?
+
+## Problem 3 - Solution
+
+- 68% of the data fall within one standard deviation of the mean. So the range is 2.97 to 3.03. (3-.03 to 3+.03)
+
+- 95% of the data fall within two standard deviations of the mean. So the range is 2.94 to 3.06. (3-.06 to 3+.06)
+
+- 99.7% of the data fall within three standard deviations of the mean. So the range is 2.91 to 3.09. (3-.09 to 3+.09)
+
+## Problem 4 - Linear Equations from OLS model
+
+```{r echo=FALSE}
+
+iris_data <- iris 
+model1 <- lm(Sepal.Length ~ Sepal.Width, data = iris_data)
+stargazer(model1, type = "text")
+
+
+```
+<p style="background-color: crimson; color: #f1f1f1; font-size: small">From *iris* data set in R.</p>
+
+
+
+
+
+## Problem 4 - Linear Equations from OLS model
+
+1. Using the statistical output on the previous slide, derive an equation to find the Y or dependent variable (Sepal.Length) for any value of X (Sepal.Width).
+2. Using the equation you derived, what is the predicted Sepal.Length for a Sepal.Width of 3.5?
+3. Using the equation you derived, what is the predicted Sepal.Length for a Sepal.Width of 4.0?
+
+## Problem 4 - Solution
+
+- The basic equation for a linear model is $Y = \alpha + \beta X$ where Y is the dependent variable, X is the independent variable, $\alpha$ is the intercept, and \$beta$, the slope of the line, is the coefficient for the X variable. 
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky" rowspan="2"></th>
+    <th class="tg-0pky" colspan="2">Dependent Variable</th>
+  </tr>
+  <tr>
+    <th class="tg-0pky" colspan="2">Y</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">X</td>
+    <td class="tg-0pky" colspan="2">$\beta$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2">(Standard Error of X)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Constant</td>
+    <td class="tg-0pky" colspan="2">$\alpha$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky" colspan="2">(Standard Error of Constant)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="3">Other stuff (Notes, R-squared, model fit)</td>
+  </tr>
+</tbody>
+</table>
+
+1. Answer: Sepal.Length = 6.526 - 0.223 * Sepal.Width
+
+## Problem 4 - Solution
+
+1. Answer: Sepal.Length = 6.526 - 0.223 * Sepal.Width
+2. Answer: Sepal.Length = 6.526 - 0.223 * 3.5 = 5.7455
+3. Answer: Sepal.Length = 6.526 - 0.223 * 4.0 = 5.634
+
+## Problem 5 - Linear Equations from OLS model
+
+```{r echo=FALSE}
+model2 <- lm(Sepal.Length ~ Petal.Length, data = iris_data)
+stargazer(model2, type = "text")
+
+
+```
+<p style="background-color: crimson; color: #f1f1f1; font-size: small">From *iris* data set in R.</p>
+
+
+## Problem 5 - Linear Equations from OLS model
+
+1. Using the statistical output on the previous slide, derive an equation to find the Y or dependent variable (Sepal.Length) for any value of X (Petal.Length).
+
+2. Using the equation you derived, what is the predicted Sepal.Length for a Petal.Length of 3.5?
+
+3. Using the equation you derived, what is the predicted Sepal.Length for a Petal.Length of 4.0?
+
+## Problem 5 - Solution
+
+1. Answer: Sepal.Length = 4.307 + 0.409 * Petal.Length
+2. Answer: Sepal.Length = 4.307 + 0.409 * 3.5 = 5.739
+3. Answer: Sepal.Length = 4.307 + 0.409 * 4.0 = 5.943
+
+
+## Problem 6 - Linear Equations from OLS model with more than two X variables
+
+```{r echo=FALSE}
+model3 <- lm(Sepal.Length ~ Sepal.Width + Petal.Length, data = iris_data)
+stargazer(model3, type = "text")
+```
+<p style="background-color: crimson; color: #f1f1f1; font-size: small">From *iris* data set in R.</p>
+
+
+## Problem 6 - Linear Equations from OLS model with more than two X variables
+
+1. Using the statistical output on the previous slide, derive an equation to find the Y or dependent variable (Sepal.Length) for any value of X (Sepal.Width and Petal.Length).
+
+2. Using the previous equation find the predicted Sepal.Length for a Sepal.Width of 3.5 and a Petal.Length of 4.0.
+
+## Problem 6 - Solution
+
+1. Answer: Sepal.Length = 2.2469 + 0.596 * Sepal.Width + 0.472 * Petal.Length
+2. Answer: Sepal.Length = 2.2469 + 0.596 * 3.5 + 0.472 * 4.0 = 6.221
+
+
+
+## Problem 7 - Linear Equations from OLS model with more than two X variables
+
+
+```{r}
+# display means from iris data set in table with titles
+iris_means <- iris_data %>% 
+  summarise_all(mean) %>% 
+  select(Sepal.Length, Sepal.Width, Petal.Length, Petal.Width)
+
+kable(iris_means, caption = "Mean values of the Iris data set variables")
+
+```
+
+<p style="background-color: crimson; color: #f1f1f1; font-size: small">From *iris* data set in R.</p>
+
+## Problem 7 - Linear Equations from OLS model with more than two X variables
+
+```{r echo=FALSE}
+model4 <- lm(Sepal.Length ~ Sepal.Width + Petal.Length + Petal.Width, data = iris_data)
+stargazer(model4, type = "text")
+
+```
+
+<p style="background-color: crimson; color: #f1f1f1; font-size: small">From *iris* data set in R.</p>
+
+## Problem 7 - Linear Equations from OLS model with more than two X variables
+
+1. Using the statistical output on the previous slides, derive an equation to find the Y or dependent variable (Sepal.Length) for any value of X (Sepal.Width, Petal.Length, and Petal.Width).
+2. Using the above equation, find the predicted Sepal.Length for a Sepal.Width of 3.5 for mean values of the other X variables.
+3. Using the above equation, find the predicted Sepal.Length for a Sepal.Width of 4.5 for mean values of the other X variables.
+
+## Problem 7 - Solution
+
+1. Answer: Sepal.Length = 1.856 + 0.651 * Sepal.Width + 0.709 * Petal.Length - 0.556 * Petal.Width
+2. Answer: Sepal.Length = 1.856 + 0.651 * 3.5 + 0.709 * 3.76 - 0.556 * 1.199 = 6.134
+3. Answer: Sepal.Length = 1.856 + 0.651 * 4.5 + 0.709 * 3.76 - 0.556 * 1.199 = 6.785
+
+
+
+
+
+
+
+
+## Data Citation
+
+^[iris: Anderson, Edgar. Iris Data set. 1935.]
+^[R Core Team (2021). R: A language and environment for statistical
+computing. R Foundation for Statistical Computing, Vienna, Austria.
+URL https://www.R-project.org/. in R Statistical Program]
+
+
+## Authorship, License, Credits
+
+- Do not submit to Chegg or similar websites
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>   
+        
+        
+
