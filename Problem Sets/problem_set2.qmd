@@ -1,0 +1,275 @@
+---
+title: |
+    | Practice Problem Set 2
+    | Argument, Data, and Politics: POLS 3312
+date: May 1, 2024
+author: "Tom Hanna"
+format: 
+        revealjs:
+                self-contained: true
+                code-fold: true
+                code-summary: "Show the code"
+                transition: convex
+                theme: [moon, custom.css]
+                logo: logo.png
+                footer: "POLS3312, Spring 2024, Instructor: Tom Hanna"
+editor: source
+---
+
+```{r }
+library(tidyverse)
+library(stargazer)
+library(knitr)
+```
+
+
+## Instructions
+
+- This is strictly for your practice for the final exam, not for credit.
+- This is set up as a slideshow you can view in your browser. Use the left and right arrows on your keyboard to navigate. (From a phone, this may vary by type of phone.)
+- The answers are included and in some cases step by step instructions.
+- Please do not post this to Chegg, Coursehero, or similar commercial websites.
+
+## Problem 1 - Measures of Central Tendency
+
+The measures of **central tendency** are the mean, median, and mode.
+
+1. Calculate the mean, median, and mode for the following data set: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+2. Calculate the mean, median, and mode for the following data set: 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+
+
+
+
+## Problem 1 - Measures of Central Tendency (Solution)
+
+1. Answer: 
+
+    - Mean = sum of observations/number of observations = 11
+    - Median for odd number of observations = midpoint = 11
+    - Mode: None
+    
+2. Answer: 
+
+    - Mean = sum of observations/number of observations = 11.5
+    - Median for even number of observations = midpoint between two middle numbers = 11.5
+    - Mode: None
+    
+
+    
+
+## Problem 2 - Measures of Central Tendency
+
+1. Calculate the mean, median, and mode for the following data set: 10, 15, 17, 15, 11, 10, 12, 15, 14, 13, 15, 16, 18
+
+2. Calculate the mean, median, and mode for the following data set: 10, 15, 17, 13, 11, 10, 12, 13, 14, 13, 15, 16, 18, 15
+
+
+
+## Problem 2 - Measures of Central Tendency (Solution)
+
+1. Answer: 
+
+    - Mean: 13.923
+    - Median: 15
+    - Mode: 15
+    
+2. Answer:
+
+    - Mean: 13.714
+    - Median: 13.5
+    - Mode: 13
+    
+
+
+## Problem 3 - Measures of Dispersion
+
+The measures of **dispersion** are the range, variance, and standard deviation.
+
+- You have the following information about a data set: 
+
+    - Mean: 10
+    - Median: 10
+    - Mode: 10
+    - Standard Deviation: 2
+    - 250 observations
+    - Calculate the Variance.
+    
+
+
+## Problem 3 - Measures of Dispersion (Solution)
+
+- Answer: 
+ 
+    - Variance = square of the standard deviation = 4
+    
+    
+## Problem 4 - Measures of Dispersion
+
+- You have the following information about a data set:
+
+    - Mean: 500
+    - Median: 495
+    - Variance: 100
+    - 250 observations
+    - Calculate the standard deviation.
+    
+## Problem 4 - Measures of Dispersion (Solution)
+    
+- Answer:
+
+    - Standard Deviation = square root of the variance = 10
+    
+
+## Problem 5 - 68-95-99.7 Rule
+
+- You have a set of data with a mean of 73.5 and a standard deviation of 1.5, and the data is normally distributed. 68% of the observations fall within what range?
+
+- 95% of the observations fall within what range?
+
+- 99.7% of the observations fall within what range?
+
+
+## Problem 5 - 68-95-99.7 Rule (Solution)
+
+- Answer:
+
+    - 68% of the observations fall within 1 standard deviation of the mean, or between 72 and 75.
+    - 95% of the observations fall within 2 standard deviations of the mean, or between 70.5 and 77.5.
+    - 99.7% of the observations fall within 3 standard deviations of the mean, or between 69 and 79.
+    
+## Problems 6 and 7 - Means of data set
+
+```{r}
+
+# Load the data
+arrests_data <- USArrests
+
+
+# display means from arrests_data set in table with titles
+
+arrests_means <- arrests_data %>% 
+  summarise_all(mean) %>%
+        select(Murder,Assault,UrbanPop,Rape)
+
+kable(arrests_means, caption = "Mean values of the USArrests data set variables")
+
+```
+
+<p style="background-color: crimson; color: #f1f1f1; font-size: small">From *USArrests* data set in R.</p>
+
+        - Arrests data for the 50 US states for a single year
+        - UrbanPop - state urban population percentage
+        - Murder - statewide arrests for murder in a year per 100,000 population
+        - Rape - statewide arrests for rape in a year per 100,000 population
+        - Assault statewide arrests for assault in a year per 100,000 population
+
+
+    
+## Problem 6 - Linear Equations from OLS Models
+
+```{r}
+
+# Fit the model
+arrests_model1 <- lm(Murder ~ UrbanPop, data = arrests_data)
+
+# print to screen with stargazer
+stargazer(arrests_model1, type = "text")
+```
+<p style="background-color: crimson; color: #f1f1f1; font-size: small">From *USArrests* data set in R.</p>
+
+
+## Problem 6 - Linear Equations from OLS model
+
+1. Using the statistical output on the previous slide, derive an equation to find the Y or dependent variable (*Murder* - statewide arrests per 100,000 population) for any value of X (*UrbanPop* - state Urban population percentage).
+
+2. Using the equation you derived, what is the predicted murder arrest rate (*Murder*) for an urban population (*UrbanPop*) of 50%?
+
+3. Using the equation you derived, what is the predicted murder arrest rate (*Murder*) for an urban population (*UrbanPop*) of 80%?
+
+
+## Problem 6 - Linear Equations from OLS model (Solution)
+
+$y = \alpha + \beta X$
+
+1. $Murder = 6.416 + .021 UrbanPop$
+2. Answer: $Murder = 6.416 + .021 * 50$ = 7.466
+3. Answer: $Murder = 6.416 + .021 * 80$ = 8.096
+
+
+
+
+## Problem 7 - Linear Equations from OLS Model with two X variables
+
+```{r}
+arrests_model2 <- lm(Murder ~ UrbanPop + Assault, data = arrests_data)
+
+stargazer(arrests_model2, type = "text")
+
+```
+
+<p style="background-color: crimson; color: #f1f1f1; font-size: small">From *USArrests* data set in R.</p>
+
+
+## Problem 7 - Linear Equations from OLS Model with two X variables
+
+1. Using the statistical output from the previous slide, derive an equation to find the *Murder* arrest rate from the *Assault* arrest rate and *UrbanPop*.
+2. Find the value for *Murder* arrest rate for an *Assault* arrest rate of 276 and an *UrbanPop* of 91.
+3. Find the value for *Murder* arrest rate for an *Assault* arrest rate of 263 and an *UrbanPop* of 48.
+4. Find the value for *Murder* arrest rate for mean values of *Assault* and *UrbanPop*
+
+
+
+## Problem 7 - (Solutions)
+
+$y = \alpha + \beta_1 x_1 + \beta_2 x_2$
+
+1. Answer: $Murder = 3.207 + .044 * Assault - .045 * UrbanPop$
+2. Answer: $Murder = 3.207 + .044 * 276 - .045 * 91$ = 11.256 
+3. Answer: $Murder = 3.207 + .044 * 263 - .045 * 48$ = 12.619 
+4. Answer: $Murder = 3.207 + .044 * 170.76 - .045 * 65.54$ = 7.77114
+
+
+## Problem 7 - Part 2
+
+- The values for # 2 were the data set's *Assault* and *UrbanPop* numbers for California and the data set *Murder* rate is 9.0. The values for # 3 were the data set's numbers for Alaska and the data set murder rate for Alaska is 10.0. 
+
+- Compare these to the *predicted* or *fitted* values on the previous slide. 
+
+- Question 1 : What is the difference between these actual values and the *predicted* values called?
+
+- Question 2 : What is the difference for California? For Alaska?
+
+
+## Problem 7 - Part 2 (Solution)
+
+- Question 1: Residuals
+
+- Question 2: 
+
+        - -2.256 for California
+        - -2.619 for Alaska
+
+## Data Citation
+
+
+^[R Core Team (2021). R: A language and environment for statistical
+computing. R Foundation for Statistical Computing, Vienna, Austria.
+URL https://www.R-project.org/. in R Statistical Program]
+
+
+## Authorship, License, Credits
+
+- Do not submit to Chegg or similar websites
+
+- Author: Tom Hanna
+
+- Website: <a href="https://tom-hanna.org/">tomhanna.me</a>
+
+- License: This work is licensed under a <a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</>
+
+<a href= "http://creativecommons.org/licenses/by-nc-sa/4.0/">![Creative Commons License](creative_commons_license.png)</a>   
+        
+        
+
+
