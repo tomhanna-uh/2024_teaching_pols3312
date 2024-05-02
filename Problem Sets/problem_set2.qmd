@@ -250,6 +250,17 @@ $y = \alpha + \beta_1 x_1 + \beta_2 x_2$
         - -2.256 for California
         - -2.619 for Alaska
 
+## Problem 7 - Linear Equations from OLS Model with two X variables
+
+```{r}
+arrests_model3 <- lm(Murder ~ UrbanPop + Assault, data = arrests_data)
+
+stargazer(arrests_model3)
+
+```
+
+
+
 ## Data Citation
 
 

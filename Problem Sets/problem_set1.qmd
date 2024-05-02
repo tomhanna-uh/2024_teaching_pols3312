@@ -242,6 +242,22 @@ stargazer(model4, type = "text")
 
 
 
+## Cars
+
+```{r}
+# load the cars data set
+cars_data <- mtcars
+
+# display means from mtcars data set in table with titles
+cars_means <- cars_data %>% 
+  summarise_all(mean) %>% 
+  select(mpg, cyl, disp, wt, gear)
+
+kable(cars_means, caption = "Mean values of the Motor Trend data set variables")
+
+
+
+```
 
 
 
